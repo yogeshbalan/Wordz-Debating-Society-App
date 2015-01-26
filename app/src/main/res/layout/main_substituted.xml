@@ -1,0 +1,172 @@
+<com.yogesh.wordzapp.utils.NotifyScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/notify_scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <FrameLayout
+        android:clipChildren="false"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Image Layout -->
+        <FrameLayout
+            android:id="@+id/image_frame_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/image_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/back"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:contentDescription="@string/app_name" />
+
+        </FrameLayout>
+
+        <!-- Content Layout -->
+        <LinearLayout
+            android:id="@+id/content_linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/toolbar">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/toolbar"
+                    android:layoutAnimation="@anim/layout_controller_color">
+
+                    <FrameLayout
+                        android:id="@+id/f1"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_margin="4dp"
+                        android:layout_below="@+id/toolbar"
+                        android:background="@color/trans_green"
+                        android:onClick="ShowBasic"
+                        >
+
+                        <ImageButton
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:layout_gravity="bottom|center_horizontal"
+                            android:scaleType="center"
+                            android:background="@drawable/debate"
+                            android:id="@+id/basics"
+                            android:onClick="ShowBasic"/>
+
+                        <com.yogesh.wordzapp.utils.WordzTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Wordz Basics"
+                            android:layout_gravity="bottom|left"
+                            android:fontFamily="sans-serif-condensed"
+                            android:textColor="@android:color/white"
+                            android:textSize="25sp"
+                            android:padding="10dp"/>
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/f2"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_below="@+id/f1"
+                        android:background="@color/trans_greyblue"
+                        android:onClick="ShowSchedule"
+                        >
+
+                        <ImageButton
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:layout_gravity="bottom|center_horizontal"
+                            android:scaleType="fitCenter"
+                            android:background="@drawable/clock_dark"
+                            android:id="@+id/calender"
+                            android:onClick="ShowSchedule"/>
+
+                        <com.yogesh.wordzapp.utils.WordzTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Wordz Schedule"
+                            android:layout_gravity="bottom|left"
+                            android:fontFamily="sans-serif-condensed"
+                            android:textColor="@android:color/white"
+                            android:textSize="25sp"
+                            android:padding="10dp"/>
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/f3"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_below="@+id/f2"
+                        android:background="@color/trans_violet"
+                        android:onClick="ShowSupport"
+                        >
+
+                        <ImageButton
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:layout_gravity="bottom|center_horizontal"
+                            android:scaleType="center"
+                            android:background="@drawable/ic_support"
+                            android:id="@+id/support"
+                            android:onClick="ShowSupport"/>
+
+                        <com.yogesh.wordzapp.utils.WordzTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Wordz Support"
+                            android:layout_gravity="bottom|left"
+                            android:fontFamily="sans-serif-condensed"
+                            android:textColor="@android:color/white"
+                            android:textSize="25sp"
+                            android:padding="10dp"/>
+
+                    </FrameLayout>
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+
+        <!-- Toolbar Layout -->
+        <LinearLayout
+            android:id="@+id/toolbar_linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:background="@color/colorPrimary">
+
+            <android.support.v7.widget.Toolbar
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:theme="@style/myCustomTheme"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</com.yogesh.wordzapp.utils.NotifyScrollView>

@@ -1,0 +1,329 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yogesh.wordzapp.MODEL_UN_PRO">
+
+    <android.support.v7.widget.Toolbar
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/pro_one"
+        app:theme="@style/myCustomTheme">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:id="@+id/toolbar_title" />
+    </android.support.v7.widget.Toolbar>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar">
+    
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar">
+
+    <LinearLayout
+        android:id="@+id/f1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:layout_below="@+id/toolbar"
+        android:background="@drawable/abc_popup_background_mtrl_mult"
+        android:padding="20dp"
+        >
+
+       <com.yogesh.wordzapp.utils.TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:textColor="@color/greytexthead"
+           android:text="@string/model_formal_debate_head"
+           android:textSize="25sp"
+           app:typeface="fonts/Gotham-BookItalic.ttf"/>
+
+        <com.yogesh.wordzapp.utils.TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/greytextdetail"
+            android:text="@string/model_formal_debate_maini"
+            android:textSize="20sp"
+            android:layout_marginTop="8dp"
+            app:typeface="fonts/Gotham-Book.ttf"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/f2"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:layout_below="@+id/f1"
+        android:background="@drawable/abc_popup_background_mtrl_mult"
+        android:padding="20dp"
+        >
+
+        <com.yogesh.wordzapp.utils.TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/greytexthead"
+            android:text="@string/POI_head"
+            android:textSize="25sp"
+            app:typeface="fonts/Gotham-BookItalic.ttf"/>
+
+        <com.yogesh.wordzapp.utils.TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/greytextdetail"
+            android:text="@string/POI_main"
+            android:textSize="20sp"
+            android:layout_marginTop="8dp"
+            app:typeface="fonts/Gotham-Book.ttf"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/f3"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:layout_below="@+id/f2"
+        android:background="@drawable/abc_popup_background_mtrl_mult"
+        android:padding="20dp"
+        >
+
+        <com.yogesh.wordzapp.utils.TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/greytexthead"
+            android:text="@string/MOCOD_head"
+            android:textSize="25sp"
+            app:typeface="fonts/Gotham-BookItalic.ttf"/>
+
+        <com.yogesh.wordzapp.utils.TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/greytextdetail"
+            android:text="@string/MOCOD_main"
+            android:textSize="20sp"
+            android:layout_marginTop="8dp"
+            app:typeface="fonts/Gotham-Book.ttf"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/f4"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:layout_below="@+id/f3"
+        android:background="@drawable/abc_popup_background_mtrl_mult"
+        android:padding="20dp"
+        >
+
+        <com.yogesh.wordzapp.utils.TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/greytexthead"
+            android:text="@string/MOSD_head"
+            android:textSize="25sp"
+            app:typeface="fonts/Gotham-BookItalic.ttf"/>
+
+        <com.yogesh.wordzapp.utils.TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/greytextdetail"
+            android:text="@string/MOSD_main"
+            android:textSize="20sp"
+            android:layout_marginTop="8dp"
+            app:typeface="fonts/Gotham-Book.ttf"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/f5"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:layout_below="@+id/f4"
+        android:background="@drawable/abc_popup_background_mtrl_mult"
+        android:padding="20dp"
+        >
+
+        <com.yogesh.wordzapp.utils.TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/greytexthead"
+            android:text="@string/POIN_head"
+            android:textSize="25sp"
+            app:typeface="fonts/Gotham-BookItalic.ttf"/>
+
+        <com.yogesh.wordzapp.utils.TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/greytextdetail"
+            android:text="@string/POIN_main"
+            android:textSize="20sp"
+            android:layout_marginTop="8dp"
+            app:typeface="fonts/Gotham-Book.ttf"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/f6"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:layout_below="@+id/f5"
+        android:background="@drawable/abc_popup_background_mtrl_mult"
+        android:padding="20dp"
+        >
+
+        <com.yogesh.wordzapp.utils.TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/greytexthead"
+            android:text="@string/MTSST_head"
+            android:textSize="25sp"
+            app:typeface="fonts/Gotham-BookItalic.ttf"/>
+
+        <com.yogesh.wordzapp.utils.TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/greytextdetail"
+            android:text="@string/MTSST_main"
+            android:textSize="20sp"
+            android:layout_marginTop="8dp"
+            app:typeface="fonts/Gotham-Book.ttf"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/f7"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:layout_below="@+id/f6"
+        android:background="@drawable/abc_popup_background_mtrl_mult"
+        android:padding="20dp"
+        >
+
+        <com.yogesh.wordzapp.utils.TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/greytexthead"
+            android:text="@string/MTAM_head"
+            android:textSize="25sp"
+            app:typeface="fonts/Gotham-BookItalic.ttf"/>
+
+        <com.yogesh.wordzapp.utils.TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/greytextdetail"
+            android:text="@string/MTAM_main"
+            android:textSize="20sp"
+            android:layout_marginTop="8dp"
+            app:typeface="fonts/Gotham-Book.ttf"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/f8"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:layout_below="@+id/f7"
+        android:background="@drawable/abc_popup_background_mtrl_mult"
+        android:padding="20dp"
+        >
+
+        <com.yogesh.wordzapp.utils.TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/greytexthead"
+            android:text="@string/MTTD_head"
+            android:textSize="25sp"
+            app:typeface="fonts/Gotham-BookItalic.ttf"/>
+
+        <com.yogesh.wordzapp.utils.TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/greytextdetail"
+            android:text="@string/MTTD_main"
+            android:textSize="20sp"
+            android:layout_marginTop="8dp"
+            app:typeface="fonts/Gotham-Book.ttf"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/f9"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:layout_below="@+id/f8"
+        android:background="@drawable/abc_popup_background_mtrl_mult"
+        android:padding="20dp"
+        >
+
+        <com.yogesh.wordzapp.utils.TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/greytexthead"
+            android:text="@string/MTMCA_head"
+            android:textSize="25sp"
+            app:typeface="fonts/Gotham-BookItalic.ttf"/>
+
+        <com.yogesh.wordzapp.utils.TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/greytextdetail"
+            android:text="@string/MTMCA_main"
+            android:textSize="20sp"
+            android:layout_marginTop="8dp"
+            app:typeface="fonts/Gotham-Book.ttf"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/f10"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:layout_below="@+id/f9"
+        android:background="@drawable/abc_popup_background_mtrl_mult"
+        android:padding="20dp"
+        >
+
+        <com.yogesh.wordzapp.utils.TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/greytexthead"
+            android:text="@string/POO_head"
+            android:textSize="25sp"
+            app:typeface="fonts/Gotham-BookItalic.ttf"/>
+
+        <com.yogesh.wordzapp.utils.TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/greytextdetail"
+            android:text="@string/POO_main"
+            android:textSize="20sp"
+            android:layout_marginTop="8dp"
+            app:typeface="fonts/Gotham-Book.ttf"/>
+    </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

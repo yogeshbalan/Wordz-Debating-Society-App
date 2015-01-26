@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yogesh.wordzapp" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".WordzBasic"
+            android:label="@string/title_activity_wordz_basic"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.yogesh.wordzapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".WordzSchedule"
+            android:label="@string/title_activity_wordz_schedule"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.yogesh.wordzapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".WordzSupport"
+            android:label="@string/title_activity_wordz_support"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.yogesh.wordzapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".MODEL_UN_PRO"
+            android:label="@string/title_activity_model__un__pro"
+            android:parentActivityName=".WordzBasic" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.yogesh.wordzapp.WordzBasic" />
+        </activity>
+        <activity
+            android:name=".MUNVocab"
+            android:label="@string/title_activity_munvocab"
+            android:parentActivityName=".WordzBasic" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.yogesh.wordzapp.WordzBasic" />
+        </activity>
+        <activity
+            android:name=".PointsAndMotionList"
+            android:label="@string/title_activity_points_and_motion_list"
+            android:parentActivityName=".WordzBasic"
+            android:screenOrientation="landscape" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.yogesh.wordzapp.WordzBasic" />
+        </activity>
+        <activity
+            android:name=".Resolutions"
+            android:label="@string/title_activity_resolutions"
+            android:parentActivityName=".WordzBasic" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.yogesh.wordzapp.WordzBasic" />
+        </activity>
+        <activity
+            android:name=".SampleResolution"
+            android:label="@string/title_activity_sample_resolution"
+            android:parentActivityName=".WordzBasic" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.yogesh.wordzapp.WordzBasic" />
+        </activity>
+    </application>
+
+</manifest>

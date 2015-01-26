@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yogesh.wordzapp.SampleResolution">
+
+    <android.support.v7.widget.Toolbar
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/pro_six"
+        app:theme="@style/myCustomTheme">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:id="@+id/toolbar_title" />
+    </android.support.v7.widget.Toolbar>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar">
+
+    <LinearLayout
+        android:id="@+id/f1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:layout_below="@+id/toolbar"
+        android:background="@drawable/abc_popup_background_mtrl_mult"
+        android:padding="20dp"
+        >
+
+        <com.yogesh.wordzapp.utils.TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/greytexthead"
+            android:text="@string/model_formal_debate_head"
+            android:textSize="25sp"
+            app:typeface="fonts/Gotham-BookItalic.ttf"/>
+
+        <com.yogesh.wordzapp.utils.TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/greytextdetail"
+            android:text="@string/model_formal_debate_maini"
+            android:textSize="20sp"
+            android:layout_marginTop="8dp"
+            app:typeface="fonts/Gotham-Book.ttf"/>
+    </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
