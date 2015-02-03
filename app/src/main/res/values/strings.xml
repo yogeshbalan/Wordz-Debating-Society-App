@@ -37,5 +37,10 @@
     <string name="title_activity_points_and_motion_list">PointsAndMotionList</string>
     <string name="title_activity_resolutions">Resolutions</string>
     <string name="title_activity_sample_resolution">SampleResolution</string>
+    <string name="title_activity_points_and_motion_usage">PointsAndMotionUsage</string>
+    
+    <string name="aboutWordz">WORDZ is a student led youth organization which aims at enhancing public speaking as well as leadership skills among the youth of our country.\n\n\n
+We at WORDZ believe that each student has the potential to be a good speaker, debater, orator and diplomat. For this reason we provide schools with workshops and trainings for different platforms of public speaking so as to facilitate programs for them to follow and learn what they need to. We send our trainers to various schools and universities helping the students learn better and faster through modules and simulations.\n\n\n
+Alongwith this, WORDZ also organises various events ranging from intra/inter school/college MUNs to Parliamentary Debates, Quizzes and other events relating to public speaking .</string>
 
 </resources>

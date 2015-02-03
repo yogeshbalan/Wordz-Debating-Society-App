@@ -49,7 +49,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/greytexthead"
-            android:text="@string/model_formal_debate_head"
+            android:text="Sample Resolution"
             android:textSize="25sp"
             app:typeface="fonts/Gotham-BookItalic.ttf"/>
 
@@ -57,7 +57,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/greytextdetail"
-            android:text="@string/model_formal_debate_maini"
+            android:text="Resolution GA/3/1.1\nGeneral Assembly Third Committee\nSponsors: United States, Austria and Italy\nSignatories: Greece, Tajikistan, Japan, Canada, Mali, the Netherlands and Gabon\n\nTopic: 'Strengthening UN coordination of humanitarian assistance in complex emergencies'\n\n\nThe General Assembly,\n
+Reminding all nations of the celebration of the 50th anniversary of the Universal Declaration of Human Rights, which recognizes the inherent dignity, equality and inalienable rights of all global citizens, [use commas to separate preambulatory clauses]\n\n\nReaffirming its Resolution 33/1996 of 25 July 1996, which encourages Governments to work with UN bodies aimed at improving the coordination and effectiveness of humanitarian assistance,\n\n\nNoting with satisfaction the past efforts of various relevant UN bodies and nongovernmental organizations,\n\n\nStressing the fact that the United Nations faces significant financial obstacles and is in need of reform, particularly in the humanitarian realm,\n\n\nEncourages all relevant agencies of the United Nations to collaborate more closely with countries at the grassroots level to enhance the carrying out of relief efforts; [use semicolons to separate operative clauses]\n\n\nUrges member states to comply with the goals of the UN Department of Humanitarian Affairs to streamline efforts of humanitarian aid; Requests that all nations develop rapid deployment forces to better enhance the coordination of relief efforts of humanitarian assistance in complex emergencies;\n\n\nCalls for the development of a United Nations Trust Fund that encourages voluntary donations from the private transnational sector to aid in funding the implementation of rapid deployment forces;\n\n\n
+Stresses the continuing need for impartial and objective information on the political, economic and social situations and events of all countries;\n\n\nCalls upon states to respond quickly and generously to consolidated appeals for humanitarian assistance; and
+Requests the expansion of preventive actions and assurance of postconflict assistance through reconstruction and development. [end resolutions with a period]\n\n"
             android:textSize="20sp"
             android:layout_marginTop="8dp"
             app:typeface="fonts/Gotham-Book.ttf"/>

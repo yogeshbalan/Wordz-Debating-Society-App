@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yogesh.wordzapp.utils.TextView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/textview_grid"
+        android:background="@drawable/abc_popup_background_mtrl_mult"/>

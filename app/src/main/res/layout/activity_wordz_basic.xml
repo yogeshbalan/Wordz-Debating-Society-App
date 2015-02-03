@@ -107,7 +107,7 @@
 
             android:layout_below="@+id/f3"
             android:background="@color/pro_four"
-            android:onClick="ShowSchedule"
+            android:onClick="PointsAndMotionUsage"
             >
 
             <com.yogesh.wordzapp.utils.TextView
@@ -118,7 +118,9 @@
                 app:typeface="fonts/Gotham-BoldItalic.ttf"
                 android:textColor="@android:color/white"
                 android:textSize="25sp"
-                android:padding="10dp"/>
+                android:padding="10dp"
+                android:clickable="true"
+                android:onClick="PointsAndMotionUsage"/>
 
         </FrameLayout>
 

@@ -1,13 +1,13 @@
 package com.yogesh.wordzapp;
 
-import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
+import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
 
-public class PointsAndMotionList extends ActionBarActivity {
+public class PointsAndMotionUsage extends ActionBarActivity {
 
     private Toolbar toolbar;
     private CharSequence mTitle;
@@ -15,11 +15,9 @@ public class PointsAndMotionList extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_points_and_motion_list);
-        
-        
+        setContentView(R.layout.activity_points_and_motion_usage);
 
-        mTitle = "Points and Motion - List";
+        mTitle = "Points and Motion - Usage";
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         toolbar.setTitle(mTitle);
         toolbar.setTitleTextColor(getResources().getColor(R.color.white));
@@ -33,7 +31,7 @@ public class PointsAndMotionList extends ActionBarActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_points_and_motion_list, menu);
+        getMenuInflater().inflate(R.menu.menu_points_and_motion_usage, menu);
         return true;
     }
 

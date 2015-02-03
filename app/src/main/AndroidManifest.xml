@@ -81,6 +81,15 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.yogesh.wordzapp.WordzBasic" />
         </activity>
+        <activity
+            android:name=".PointsAndMotionUsage"
+            android:label="@string/title_activity_points_and_motion_usage"
+            android:parentActivityName=".WordzBasic"
+            android:screenOrientation="landscape">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.yogesh.wordzapp.WordzBasic" />
+        </activity>
     </application>
 
 </manifest>

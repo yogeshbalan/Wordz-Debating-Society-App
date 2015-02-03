@@ -1,14 +1,11 @@
 package com.yogesh.wordzapp;
 
-import android.app.ActivityOptions;
 import android.app.Fragment;
 import android.app.FragmentTransaction;
 import android.content.Intent;
-import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.Toolbar;
-import android.transition.Explode;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -46,66 +43,37 @@ public class WordzBasic extends ActionBarActivity {
     
     public void ModelUN(final View view){
         Intent intent = new Intent(this, MODEL_UN_PRO.class);
-        if(Build.VERSION.SDK_INT==Build.VERSION_CODES.LOLLIPOP) {
-            getWindow().setExitTransition(new Explode());
-            startActivity(intent,
-                    ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
-        }else{
             startActivity(intent);
-        }
-
-        //fragmentTransaction.replace(R.id.scrollview_un, newFragment);
-        //fragmentTransaction.addToBackStack(null);
-        //fragmentTransaction.commit();
-        
-
     }
 
     public void MUNvocab(final View view){
         Intent intent = new Intent(this, MUNVocab.class);
-        if(Build.VERSION.SDK_INT==Build.VERSION_CODES.LOLLIPOP) {
-            getWindow().setExitTransition(new Explode());
-            startActivity(intent,
-                    ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
-        }else{
             startActivity(intent);
-        }
 
     }
 
     public void PointsAndMotionList(final View view){
         Intent intent = new Intent(this, PointsAndMotionList.class);
-        if(Build.VERSION.SDK_INT==Build.VERSION_CODES.LOLLIPOP) {
-            getWindow().setExitTransition(new Explode());
-            startActivity(intent,
-                    ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
-        }else{
             startActivity(intent);
-        }
+
+    }
+
+    public void PointsAndMotionUsage(final View view){
+        Intent intent = new Intent(this, PointsAndMotionUsage.class);
+        startActivity(intent);
 
     }
 
     public void Resolutions(final View view) {
         Intent intent = new Intent(this, Resolutions.class);
-        if (Build.VERSION.SDK_INT == Build.VERSION_CODES.LOLLIPOP) {
-            getWindow().setExitTransition(new Explode());
-            startActivity(intent,
-                    ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
-        } else {
             startActivity(intent);
-        }
 
     }
 
     public void SampleResolutions(final View view){
         Intent intent = new Intent(this, SampleResolution.class);
-        if(Build.VERSION.SDK_INT==Build.VERSION_CODES.LOLLIPOP) {
-            getWindow().setExitTransition(new Explode());
-            startActivity(intent,
-                    ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
-        }else{
             startActivity(intent);
-        }
+
 
     }
 
@@ -169,4 +137,6 @@ public class WordzBasic extends ActionBarActivity {
         }
     }
     */
+    
+    
 }

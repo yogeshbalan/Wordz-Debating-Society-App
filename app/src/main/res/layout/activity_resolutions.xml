@@ -49,7 +49,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="@color/greytexthead"
-                android:text="@string/model_formal_debate_head"
+                android:text="Resolutions"
                 android:textSize="25sp"
                 app:typeface="fonts/Gotham-BookItalic.ttf"/>
 
@@ -57,7 +57,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="@color/greytextdetail"
-                android:text="@string/model_formal_debate_maini"
+                android:text="The final results of discussion, writing and negotiation are resolutions—written suggestions for addressing a specific problem or issue. Resolutions, which are drafted by delegates and voted on by the committee, normally require a simple majority to pass (except in the Security Council). Only Security Council resolutions can compel nations to take action. All other UN bodies use resolutions to make recommendations or suggestions for future action."
                 android:textSize="20sp"
                 android:layout_marginTop="8dp"
                 app:typeface="fonts/Gotham-Book.ttf"/>
@@ -78,7 +78,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="@color/greytexthead"
-                android:text="@string/POI_head"
+                android:text="Draft Resolutions"
                 android:textSize="25sp"
                 app:typeface="fonts/Gotham-BookItalic.ttf"/>
 
@@ -86,7 +86,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="@color/greytextdetail"
-                android:text="@string/POI_main"
+                android:text="Draft resolutions are all resolutions that have not yet been voted on. Delegates write draft resolutions alone or with other countries. There are three main parts to a draft resolution: the heading, the preamble and the operative section. The heading shows the committee and topic along with the resolution number. It also lists the draft resolution's sponsors and signatories (see below). Each draft resolution is one long sentence with sections separated by commas and semicolons. The subject of the sentence is the body making the statement (e.g., the General Assembly, Economic and Social Council, or Security Council). The preamble and operative sections then describe the current situation and actions that the committee will take."
                 android:textSize="20sp"
                 android:layout_marginTop="8dp"
                 app:typeface="fonts/Gotham-Book.ttf"/>
@@ -107,7 +107,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="@color/greytexthead"
-                android:text="@string/MOCOD_head"
+                android:text="Bringing a Resolution to the Floor for Debate"
                 android:textSize="25sp"
                 app:typeface="fonts/Gotham-BookItalic.ttf"/>
 
@@ -115,7 +115,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="@color/greytextdetail"
-                android:text="@string/MOCOD_main"
+                android:text="A draft resolution must always gain the support of a certain number of member states in the committee before the sponsors (the delegates who created the resolution) may submit it to the committee staff. Many conferences require signatures from 20 percent of the countries present in order to submit a draft resolution. A staff member will read the draft resolution to ensure that it is relevant and in proper format. Only when a staff member formally accepts the document and assigns it a number can it be referred to in formal debate."
+                android:textSize="20sp"
+                android:layout_marginTop="8dp"
+                app:typeface="fonts/Gotham-Book.ttf"/>
+
+            <com.yogesh.wordzapp.utils.TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/greytextdetail"
+                android:text="In some cases a delegate must make a motion to introduce the draft resolution, while in other cases the sponsors are immediately called upon to read the document. Because these procedures can vary, it is essential to find out about the resolution process for the conference you plan to attend."
                 android:textSize="20sp"
                 android:layout_marginTop="8dp"
                 app:typeface="fonts/Gotham-Book.ttf"/>
@@ -136,7 +145,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="@color/greytexthead"
-                android:text="@string/MOSD_head"
+                android:text="Sponsors and Signatories"
                 android:textSize="25sp"
                 app:typeface="fonts/Gotham-BookItalic.ttf"/>
 
@@ -144,12 +153,20 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="@color/greytextdetail"
-                android:text="@string/MOSD_main"
+                android:text="Sponsors of a draft resolution are the principal authors of the document and agree with its substance. Although it is possible to have only one sponsor, this rarely occurs at the UN, since countries must work together to create widely agreeable language in order for the draft resolution to pass. Sponsors control a draft resolution and only the sponsors can approve immediate changes"
                 android:textSize="20sp"
                 android:layout_marginTop="8dp"
                 app:typeface="fonts/Gotham-Book.ttf"/>
-        </LinearLayout>
 
+            <com.yogesh.wordzapp.utils.TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/greytexthead"
+                android:text="Signatories are countries that may or may not agree with the substance of the draft resolution but still wish to see it debated so that they can propose amendments. A certain percentage of the committee must be either sponsors or signatories to a draft resolution in order for it to be accepted."
+                android:textSize="20sp"
+                app:typeface="fonts/Gotham-Book.ttf"/>
+        </LinearLayout>
+        <!-- -->
         <LinearLayout
             android:id="@+id/f5"
             android:orientation="vertical"
@@ -165,7 +182,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="@color/greytexthead"
-                android:text="@string/POIN_head"
+                android:text="Tips for Resolution Writing"
                 android:textSize="25sp"
                 app:typeface="fonts/Gotham-BookItalic.ttf"/>
 
@@ -173,7 +190,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="@color/greytextdetail"
-                android:text="@string/POIN_main"
+                android:text="
+1. Be sure to follow the format for resolutions provided by the conference organizers. Each conference may have a slightly different format. Create a detailed resolution. For example, if your resolution calls for a new program, think about how it will be funded and what body will manage it.\n
+2. Try to cite facts whenever possible.\n
+3. Be realistic.\n
+4. Do not create objectives for your resolution that cannot be met.\n
+5. Make sure your body can take the action suggested. For example, the General Assembly can't sanction another country – only the Security Council can do so.\n
+6. Try to find multiple sponsors. Your committee will be more likely to approve the resolutions if many delegates contribute ideas.\n
+7. Preambulatory clauses are historic justifications for action. Use them to cite past resolutions, precedents and statements about the purpose of action.\n
+8. Operative clauses are policies that the resolution is designed to create. Use them to explain what the committee will do to address the issue."
                 android:textSize="20sp"
                 android:layout_marginTop="8dp"
                 app:typeface="fonts/Gotham-Book.ttf"/>
@@ -194,7 +219,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="@color/greytexthead"
-                android:text="@string/MTSST_head"
+                android:text="Preambulatory Clauses"
                 android:textSize="25sp"
                 app:typeface="fonts/Gotham-BookItalic.ttf"/>
 
@@ -202,7 +227,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="@color/greytextdetail"
-                android:text="@string/MTSST_main"
+                android:text="The preamble of a draft resolution states the reasons for which the committee is addressing the topic and highlights past international action on the issue. Each clause begins with a present participle (called a preambulatory phrase) and ends with a comma. Preambulatory clauses can include:\n
+1. References to the UN Charter;\n
+2. Citations of past UN resolutions or treaties on the topic under discussion;\n
+3. Mentions of statements made by the SecretaryGeneral or a relevant UN body or agency issue;\n
+4. Recognition of the efforts of regional or nongovernmental organizations in dealing with the\n
+5. and; General statements on the topic, its significance and its impact."
                 android:textSize="20sp"
                 android:layout_marginTop="8dp"
                 app:typeface="fonts/Gotham-Book.ttf"/>
@@ -223,7 +253,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="@color/greytexthead"
-                android:text="@string/MTAM_head"
+                android:text="Sample Preambulatory Phrases"
                 android:textSize="25sp"
                 app:typeface="fonts/Gotham-BookItalic.ttf"/>
 
@@ -231,7 +261,55 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="@color/greytextdetail"
-                android:text="@string/MTAM_main"
+                android:text=" Affirming\n
+Alarmed by\n
+Approving\n
+Bearing in mind\n
+Believing\n
+Confident\n
+Contemplating\n
+Convinced\n
+Declaring\n
+Deeply concerned\n
+Deeply conscious\n
+Deeply convinced\n
+Deeply Disturbed\n
+Deeply Regretting\n
+Desiring\n
+Emphasizing\n
+Expecting\n
+Emphasizing\n
+Expecting\n
+Expressing it’s appreciation\n
+Fulfilling\n
+Fully aware\n
+Emphasizing\n
+Expecting\n
+Expressing it’s appreciation\n
+Fulfilling\n
+Fully aware\n
+Further deploring\n
+Further recalling\n
+Guided by\n
+Having adopted\n
+Having considered\n
+Having examined\n
+Having received\n
+Keeping in min\n
+Noting with deep concern\n
+Nothing with satisfaction\n
+Noting further\n
+Observing\n
+Reaffirming\n
+Realizing\n
+Recalling\n
+Recognizing\n
+Referring\n
+Seeking\n
+Taking into consideration\n
+Taking note\n
+Viewing with appreciation\n
+Welcoming"
                 android:textSize="20sp"
                 android:layout_marginTop="8dp"
                 app:typeface="fonts/Gotham-Book.ttf"/>
@@ -252,7 +330,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="@color/greytexthead"
-                android:text="@string/MTTD_head"
+                android:text="Operative Clauses"
                 android:textSize="25sp"
                 app:typeface="fonts/Gotham-BookItalic.ttf"/>
 
@@ -260,7 +338,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="@color/greytextdetail"
-                android:text="@string/MTTD_main"
+                android:text="Operative clauses offer solutions to issues addressed earlier in a resolution through the perambulatory section. These clauses are action oriented and should include both an underlined verb at the beginning of your sentence followed by the proposed solution. Each clause should follow the following principals:\n
+1. Clause should be numbered;\n
+2. Each clause should support one another and continue to build your solution;\n
+3. Add details to your clauses in order to have a complete solution;\n
+4. Operative clauses are punctuated by a semicolon, with the exception of your last operative clause which should end with a period."
                 android:textSize="20sp"
                 android:layout_marginTop="8dp"
                 app:typeface="fonts/Gotham-Book.ttf"/>
@@ -281,7 +363,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="@color/greytexthead"
-                android:text="@string/MTMCA_head"
+                android:text="Sample Operative Phrases"
                 android:textSize="25sp"
                 app:typeface="fonts/Gotham-BookItalic.ttf"/>
 
@@ -289,7 +371,52 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="@color/greytextdetail"
-                android:text="@string/MTMCA_main"
+                android:text=" Accepts\n
+Affirms\n
+Approves\n
+Authorizes\n
+Calls\n
+Calls upon\n
+Condemns\n
+Confirms\n
+Congratulates\n
+Considers\n
+Declares accordingly\n
+Deplores\n
+Designates\n
+Draws the attention\n
+Emphasizes Encourages\n
+Endorses\n
+Expresses its appreciation\n
+Expresses its hope\n
+Further invites\n
+Deplores\n
+Designates\n
+Draws the attention\n
+Emphasizes\n
+Encourages\n
+Endorses\n
+Expresses its appreciation\n
+Expresses its hope\n
+Further invites\n
+Further proclaims\n
+Further reminds Further recommends\n
+Further requests\n
+Further resolves\n
+Has resolved\n
+Notes\n
+Proclaims\n
+Reaffirms\n
+Recommends\n
+Regretsn\n
+Reminds\n
+Requests\n
+Solemnly affirms\n
+Strongly condemns\n
+Supports\n
+Takes note of\n
+Transmits\n
+Trusts"
                 android:textSize="20sp"
                 android:layout_marginTop="8dp"
                 app:typeface="fonts/Gotham-Book.ttf"/>
@@ -310,7 +437,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="@color/greytexthead"
-                android:text="@string/POO_head"
+                android:text="Friendly and Unfriendly Amendments"
                 android:textSize="25sp"
                 app:typeface="fonts/Gotham-BookItalic.ttf"/>
 
@@ -318,11 +445,44 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="@color/greytextdetail"
-                android:text="@string/POO_main"
+                android:text="Approved draft resolutions are modified through amendments. An amendment is a written statement that adds, deletes or revises an operative clause in a draft resolution. The amendment process is used to strengthen consensus on a resolution by allowing delegates to change certain sections. There are two types of amendments:\n
+1. Friendly Amendment\n 
+2. Unfriendly Amendment "
                 android:textSize="20sp"
                 android:layout_marginTop="8dp"
                 app:typeface="fonts/Gotham-Book.ttf"/>
+            
         </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/f11"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:layout_below="@+id/f10"
+            android:background="@drawable/abc_popup_background_mtrl_mult"
+            android:padding="20dp"
+            >
+
+            <com.yogesh.wordzapp.utils.TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/greytexthead"
+                android:text="Friendly Amendment"
+                android:textSize="25sp"
+                app:typeface="fonts/Gotham-BookItalic.ttf"/>
+
+            <com.yogesh.wordzapp.utils.TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/greytextdetail"
+                android:text="A friendly amendment is a change to the draft resolution that all sponsors agree with. After the amendment is signed by all of the draft resolution's sponsors and approved by the committee director or president, it will be automatically incorporated into the resolution.\n\n\n\n An unfriendly amendment is a change that some or all of the draft resolution's sponsors do not support and must be voted upon by the committee. The author(s) of the amendment will need to obtain a required number of signatories in order to introduce it (usually 20 percent of the committee). Prior to voting on the draft resolution, the committee votes on all unfriendly amendments. Ultimately, resolutions passed by a committee represent a great deal of debate and compromise. They are the tangible results of hours if not days of Model UN debate. As a result, it is important to become familiar with the resolution process and practice drafting resolutions using the proper structure and wording. "
+                android:textSize="20sp"
+                android:layout_marginTop="8dp"
+                app:typeface="fonts/Gotham-Book.ttf"/>
+            </LinearLayout>
+        
     </LinearLayout>
     </ScrollView>
     
