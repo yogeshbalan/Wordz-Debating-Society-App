@@ -1,27 +1,24 @@
 package com.yogesh.wordzapp;
 
 import android.os.Build;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
 
-public class WordzSupport extends ActionBarActivity {
-
+public class MUNCalender extends ActionBarActivity {
+    
     private Toolbar toolbar;
-    private CharSequence mTitle;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_wordz_support);
-
-        mTitle = "About Us";
+        setContentView(R.layout.activity_muncalender);
 
         toolbar = (Toolbar) findViewById(R.id.toolbar);
-        toolbar.setTitle(mTitle);
+        toolbar.setTitle("MUN Calender");
         toolbar.setTitleTextColor(getResources().getColor(R.color.White));
         setSupportActionBar(toolbar);
         if(Build.VERSION.SDK_INT>=Build.VERSION_CODES.LOLLIPOP){
@@ -30,14 +27,13 @@ public class WordzSupport extends ActionBarActivity {
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeButtonEnabled(true);
-        
     }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_wordz_support, menu);
+        getMenuInflater().inflate(R.menu.menu_muncalender, menu);
         return true;
     }
 

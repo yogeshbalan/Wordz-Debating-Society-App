@@ -3,7 +3,7 @@
 
     <string name="app_name">WordzApp</string>
     <string name="hello_world">Hello world!</string>
-    <string name="action_settings_main">About Us</string>
+    <string name="action_settings_main">Developed By</string>
     <string name="title_activity_wordz_basic">WordzBasic</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_wordz_schedule">WordzSchedule</string>
@@ -38,9 +38,22 @@
     <string name="title_activity_resolutions">Resolutions</string>
     <string name="title_activity_sample_resolution">SampleResolution</string>
     <string name="title_activity_points_and_motion_usage">PointsAndMotionUsage</string>
-    
     <string name="aboutWordz">WORDZ is a student led youth organization which aims at enhancing public speaking as well as leadership skills among the youth of our country.\n\n\n
 We at WORDZ believe that each student has the potential to be a good speaker, debater, orator and diplomat. For this reason we provide schools with workshops and trainings for different platforms of public speaking so as to facilitate programs for them to follow and learn what they need to. We send our trainers to various schools and universities helping the students learn better and faster through modules and simulations.\n\n\n
 Alongwith this, WORDZ also organises various events ranging from intra/inter school/college MUNs to Parliamentary Debates, Quizzes and other events relating to public speaking .</string>
+    <string name="title_activity_muncalender">MUNCalender</string>
+    <string name="title_activity_munlist">MUNList</string>
 
+
+    <string name="SummitManipal"><a href="http://summitmanipal.com/">Summit Manipal Model United Nations (SMMUN)</a></string>
+    <string name="NSIT_MUN"><a href="https://www.facebook.com/nsitmun">Netaji Subhas Institute Of Technology Model United Nations (NSITMUN)</a></string>
+
+    <string name="about_body"><![CDATA[
+        This app is developed by <br/><b>Yogesh Balan</b>.<br/>
+        <a href=\'https://www.facebook.com/yogesh.balan.7\'>Facebook</a>&nbsp;&nbsp;
+        <a href=\'https://twitter.com/yogesh_balan\'>Twitter</a>&nbsp;&nbsp;
+        <a href=\'https://plus.google.com/u/0/112844341182757087976\'>Google+</a>&nbsp;&nbsp;
+        <a href=\'https://github.com/yogeshbalan\'>GitHub</a>&nbsp;&nbsp;
+    ]]></string>
+    
 </resources>

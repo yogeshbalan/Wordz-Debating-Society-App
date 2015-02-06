@@ -1,27 +1,29 @@
 package com.yogesh.wordzapp;
 
+import android.graphics.Typeface;
 import android.os.Build;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.Toolbar;
+import android.text.method.LinkMovementMethod;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 
-public class WordzSupport extends ActionBarActivity {
-
+public class MUNList extends ActionBarActivity {
+    
     private Toolbar toolbar;
-    private CharSequence mTitle;
+    private TextView Manipal,NSIT;
+    private Typeface font;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_wordz_support);
-
-        mTitle = "About Us";
+        setContentView(R.layout.activity_munlist);
 
         toolbar = (Toolbar) findViewById(R.id.toolbar);
-        toolbar.setTitle(mTitle);
+        toolbar.setTitle("List of all MUN");
         toolbar.setTitleTextColor(getResources().getColor(R.color.White));
         setSupportActionBar(toolbar);
         if(Build.VERSION.SDK_INT>=Build.VERSION_CODES.LOLLIPOP){
@@ -31,13 +33,21 @@ public class WordzSupport extends ActionBarActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeButtonEnabled(true);
         
+        Manipal = (TextView) findViewById(R.id.textview_manipal);
+        NSIT = (TextView) findViewById(R.id.textview_NSIT);
+        Manipal.setMovementMethod(LinkMovementMethod.getInstance());
+        NSIT.setMovementMethod(LinkMovementMethod.getInstance());
+        font = Typeface.createFromAsset(getAssets(),"fonts/Gotham-BookItalic.ttf");
+        Manipal.setTypeface(font);
+        NSIT.setTypeface(font);
+
     }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_wordz_support, menu);
+        getMenuInflater().inflate(R.menu.menu_munlist, menu);
         return true;
     }
 

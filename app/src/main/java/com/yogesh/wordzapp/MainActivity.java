@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.support.v4.view.ViewCompat;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.Toolbar;
+import android.text.Html;
 import android.transition.Explode;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -23,10 +24,10 @@ import com.afollestad.materialdialogs.MaterialDialog;
 import com.yogesh.wordzapp.utils.NotifyScrollView;
 
 public class MainActivity extends ActionBarActivity implements NotifyScrollView.Callback {
-    
+
     private Toolbar toolbar;
     ImageButton Wbasic, Wschedule, Wsupport;
-    
+
     //this is it
     private NotifyScrollView mNotifyScrollView;
     private FrameLayout mImageFrameLayout;
@@ -47,13 +48,16 @@ public class MainActivity extends ActionBarActivity implements NotifyScrollView.
         mContentLinearLayout = (LinearLayout) findViewById(R.id.content_linear_layout);
         mToolbarLinearLayout = (LinearLayout) findViewById(R.id.toolbar_linear_layout);
         //end
-        
+
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         toolbar.setTitleTextColor(getResources().getColor(R.color.White));
         toolbar.setTitle("Wordz");
         toolbar.setSubtitle("The Debating Society");
         toolbar.setSubtitleTextColor(getResources().getColor(R.color.md_blue_300));
         setSupportActionBar(toolbar);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            toolbar.setElevation(10f);
+        }
 
         /*
         FadingActionBarHelper helper = new FadingActionBarHelper()
@@ -92,13 +96,13 @@ public class MainActivity extends ActionBarActivity implements NotifyScrollView.
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
             Drawable d = getResources().getDrawable(R.drawable.ic_launcher);
-                    new MaterialDialog.Builder(this)
-                            .title("About Us")
-                            .content("In this section we will show all the links and stuff like that")
-                            .positiveText("Agree")
-                            .negativeText("Disagree")
-                            .icon(d)
-                            .show();
+            new MaterialDialog.Builder(this)
+                    .title("About Me")
+                    .content(Html.fromHtml(getString(R.string.about_body)))
+                            //.positiveText("Agree")
+                            //.negativeText("Disagree")
+                    .icon(d)
+                    .show();
             return true;
         }
 
@@ -106,15 +110,14 @@ public class MainActivity extends ActionBarActivity implements NotifyScrollView.
     }
 
 
-    
     public void ShowBasic(final View view) {
         Intent intent = new Intent(this, WordzBasic.class);
         //startActivity(intent);
-        if(Build.VERSION.SDK_INT==Build.VERSION_CODES.LOLLIPOP) {
+        if (Build.VERSION.SDK_INT == Build.VERSION_CODES.LOLLIPOP) {
             getWindow().setExitTransition(new Explode());
             startActivity(intent,
                     ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
-        }else{
+        } else {
             startActivity(intent);
         }
         //overridePendingTransition(R.anim.slide_in, R.anim.fade_out);
@@ -122,11 +125,11 @@ public class MainActivity extends ActionBarActivity implements NotifyScrollView.
 
     public void ShowSchedule(final View view) {
         Intent intent = new Intent(this, WordzSchedule.class);
-        if(Build.VERSION.SDK_INT==Build.VERSION_CODES.LOLLIPOP) {
+        if (Build.VERSION.SDK_INT == Build.VERSION_CODES.LOLLIPOP) {
             getWindow().setExitTransition(new Explode());
             startActivity(intent,
                     ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
-        }else{
+        } else {
             startActivity(intent);
         }
         //overridePendingTransition(R.anim.slide_in, R.anim.fade_out);
@@ -134,16 +137,16 @@ public class MainActivity extends ActionBarActivity implements NotifyScrollView.
 
     public void ShowSupport(final View view) {
         Intent intent = new Intent(this, WordzSupport.class);
-        if(Build.VERSION.SDK_INT==Build.VERSION_CODES.LOLLIPOP) {
+        if (Build.VERSION.SDK_INT == Build.VERSION_CODES.LOLLIPOP) {
             getWindow().setExitTransition(new Explode());
             startActivity(intent,
                     ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
-        }else{
+        } else {
             startActivity(intent);
         }
         //overridePendingTransition(R.anim.slide_in, R.anim.fade_out);
     }
-    
+
     //toolbar methods
     private void setupNotifyScrollView() {
         mNotifyScrollView.setCallback(this);

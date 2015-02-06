@@ -3,14 +3,13 @@ package com.yogesh.wordzapp;
 import android.app.Fragment;
 import android.app.FragmentTransaction;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-
-import com.yogesh.wordzapp.fragments.Model_UN_pro;
 
 
 public class WordzBasic extends ActionBarActivity {
@@ -31,13 +30,13 @@ public class WordzBasic extends ActionBarActivity {
         toolbar.setTitle(mTitle);
         toolbar.setTitleTextColor(getResources().getColor(R.color.White));
         setSupportActionBar(toolbar);
+        if(Build.VERSION.SDK_INT>=Build.VERSION_CODES.LOLLIPOP){
+            toolbar.setElevation(10f);
+        }
         
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeButtonEnabled(true);
-
-        newFragment = new Model_UN_pro();
-        fragmentTransaction = getFragmentManager().beginTransaction();
 
     }
     

@@ -1,0 +1,893 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yogesh.wordzapp.MUNCalender">
+
+    <android.support.v7.widget.Toolbar xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#2C2C34"
+        app:theme="@style/myCustomTheme" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scrollbarAlwaysDrawHorizontalTrack="true"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/toolbar"
+                android:background="@drawable/abc_popup_background_mtrl_mult"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal">
+
+
+                    <com.yogesh.wordzapp.utils.TextView
+                        android:layout_width="@dimen/table_width_small"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:background="#A9FFCB"
+                        android:gravity="center"
+                        android:text="Name"
+                        android:textColor="@color/greytexthead"
+                        android:textSize="20sp"
+                        app:typeface="fonts/Gotham-Book.ttf" />
+
+                    <com.yogesh.wordzapp.utils.TextView
+                        android:layout_width="@dimen/table_width_small"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:background="#B6EEA6"
+                        android:gravity="center"
+                        android:text="Location"
+                        android:textColor="@color/greytexthead"
+                        android:textSize="20sp"
+                        app:typeface="fonts/Gotham-Book.ttf" />
+
+                    <com.yogesh.wordzapp.utils.TextView
+                        android:layout_width="@dimen/table_width_small"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:background="#C0B298"
+                        android:gravity="center"
+                        android:text="Dates"
+                        android:textColor="@color/greytexthead"
+                        android:textSize="20sp"
+                        app:typeface="fonts/Gotham-Book.ttf" />
+
+                    <com.yogesh.wordzapp.utils.TextView
+                        android:layout_width="@dimen/table_width_small"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:background="#A4778B"
+                        android:gravity="center"
+                        android:text="EB Application"
+                        android:textColor="@color/greytexthead"
+                        android:textSize="20sp"
+                        app:typeface="fonts/Gotham-Book.ttf" />
+
+                    <com.yogesh.wordzapp.utils.TextView
+                        android:layout_width="@dimen/table_width_small"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:background="#AA4586"
+                        android:gravity="center"
+                        android:text="Delegate  Application Deadline"
+                        android:textColor="@color/greytexthead"
+                        android:textSize="20sp"
+                        app:typeface="fonts/Gotham-Book.ttf" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:scrollbarAlwaysDrawHorizontalTrack="true"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/toolbar"
+                    android:background="@drawable/abc_popup_background_mtrl_mult"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:orientation="horizontal">
+
+
+                        <com.yogesh.wordzapp.utils.TextView
+                            android:layout_width="@dimen/table_width_small"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:background="#A9FFCB"
+                            android:gravity="center"
+                            android:text="Deltech MUN 2015"
+                            android:textColor="@color/greytexthead"
+                            android:textSize="20sp"
+                            app:typeface="fonts/Gotham-Book.ttf" />
+
+                        <com.yogesh.wordzapp.utils.TextView
+                            android:layout_width="@dimen/table_width_small"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:background="#B6EEA6"
+                            android:gravity="center"
+                            android:text="New Delhi"
+                            android:textColor="@color/greytexthead"
+                            android:textSize="20sp"
+                            app:typeface="fonts/Gotham-Book.ttf" />
+
+                        <com.yogesh.wordzapp.utils.TextView
+                            android:layout_width="@dimen/table_width_small"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:background="#C0B298"
+                            android:gravity="center"
+                            android:text="31 Jan-1 Feb’15"
+                            android:textColor="@color/greytexthead"
+                            android:textSize="20sp"
+                            app:typeface="fonts/Gotham-Book.ttf" />
+
+                        <com.yogesh.wordzapp.utils.TextView
+                            android:layout_width="@dimen/table_width_small"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:background="#A4778B"
+                            android:gravity="center"
+                            android:text="Closed"
+                            android:textColor="@color/greytexthead"
+                            android:textSize="20sp"
+                            app:typeface="fonts/Gotham-Book.ttf" />
+
+                        <com.yogesh.wordzapp.utils.TextView
+                            android:layout_width="@dimen/table_width_small"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:background="#AA4586"
+                            android:gravity="center"
+                            android:text="Closed"
+                            android:textColor="@color/greytexthead"
+                            android:textSize="20sp"
+                            app:typeface="fonts/Gotham-Book.ttf" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:orientation="horizontal">
+
+
+                        <com.yogesh.wordzapp.utils.TextView
+                            android:layout_width="@dimen/table_width_small"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:background="#A9FFCB"
+                            android:gravity="center"
+                            android:text="Gurgaon MUN"
+                            android:textColor="@color/greytexthead"
+                            android:textSize="20sp"
+                            app:typeface="fonts/Gotham-Book.ttf" />
+
+                        <com.yogesh.wordzapp.utils.TextView
+                            android:layout_width="@dimen/table_width_small"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:background="#B6EEA6"
+                            android:gravity="center"
+                            android:text="Gurgaon,Haryana"
+                            android:textColor="@color/greytexthead"
+                            android:textSize="20sp"
+                            app:typeface="fonts/Gotham-Book.ttf" />
+
+                        <com.yogesh.wordzapp.utils.TextView
+                            android:layout_width="@dimen/table_width_small"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:background="#C0B298"
+                            android:gravity="center"
+                            android:text="30 Jan-31 Jan’15"
+                            android:textColor="@color/greytexthead"
+                            android:textSize="20sp"
+                            app:typeface="fonts/Gotham-Book.ttf" />
+
+                        <com.yogesh.wordzapp.utils.TextView
+                            android:layout_width="@dimen/table_width_small"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:background="#A4778B"
+                            android:gravity="center"
+                            android:text="Closed"
+                            android:textColor="@color/greytexthead"
+                            android:textSize="20sp"
+                            app:typeface="fonts/Gotham-Book.ttf" />
+
+                        <com.yogesh.wordzapp.utils.TextView
+                            android:layout_width="@dimen/table_width_small"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:background="#AA4586"
+                            android:gravity="center"
+                            android:text="Closed"
+                            android:textColor="@color/greytexthead"
+                            android:textSize="20sp"
+                            app:typeface="fonts/Gotham-Book.ttf" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:orientation="horizontal">
+
+
+                        <com.yogesh.wordzapp.utils.TextView
+                            android:layout_width="@dimen/table_width_small"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:background="#A9FFCB"
+                            android:gravity="center"
+                            android:text="LNMIT MUN"
+                            android:textColor="@color/greytexthead"
+                            android:textSize="20sp"
+                            app:typeface="fonts/Gotham-Book.ttf" />
+
+                        <com.yogesh.wordzapp.utils.TextView
+                            android:layout_width="@dimen/table_width_small"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:background="#B6EEA6"
+                            android:gravity="center"
+                            android:text="Jaipur,Rajasthan"
+                            android:textColor="@color/greytexthead"
+                            android:textSize="20sp"
+                            app:typeface="fonts/Gotham-Book.ttf" />
+
+                        <com.yogesh.wordzapp.utils.TextView
+                            android:layout_width="@dimen/table_width_small"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:background="#C0B298"
+                            android:gravity="center"
+                            android:text="29 - 30 Jan’15"
+                            android:textColor="@color/greytexthead"
+                            android:textSize="20sp"
+                            app:typeface="fonts/Gotham-Book.ttf" />
+
+                        <com.yogesh.wordzapp.utils.TextView
+                            android:layout_width="@dimen/table_width_small"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:background="#A4778B"
+                            android:gravity="center"
+                            android:text="Closed"
+                            android:textColor="@color/greytexthead"
+                            android:textSize="20sp"
+                            app:typeface="fonts/Gotham-Book.ttf" />
+
+                        <com.yogesh.wordzapp.utils.TextView
+                            android:layout_width="@dimen/table_width_small"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:background="#AA4586"
+                            android:gravity="center"
+                            android:text="Closed"
+                            android:textColor="@color/greytexthead"
+                            android:textSize="20sp"
+                            app:typeface="fonts/Gotham-Book.ttf" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:orientation="horizontal">
+
+
+                        <com.yogesh.wordzapp.utils.TextView
+                            android:layout_width="@dimen/table_width_small"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:background="#A9FFCB"
+                            android:gravity="center"
+                            android:text="BITS MUN"
+                            android:textColor="@color/greytexthead"
+                            android:textSize="20sp"
+                            app:typeface="fonts/Gotham-Book.ttf" />
+
+                        <com.yogesh.wordzapp.utils.TextView
+                            android:layout_width="@dimen/table_width_small"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:background="#B6EEA6"
+                            android:gravity="center"
+                            android:text="Goa"
+                            android:textColor="@color/greytexthead"
+                            android:textSize="20sp"
+                            app:typeface="fonts/Gotham-Book.ttf" />
+
+                        <com.yogesh.wordzapp.utils.TextView
+                            android:layout_width="@dimen/table_width_small"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:background="#C0B298"
+                            android:gravity="center"
+                            android:text=" 6-7-8 Feb’15"
+                            android:textColor="@color/greytexthead"
+                            android:textSize="20sp"
+                            app:typeface="fonts/Gotham-Book.ttf" />
+
+                        <com.yogesh.wordzapp.utils.TextView
+                            android:layout_width="@dimen/table_width_small"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:background="#A4778B"
+                            android:gravity="center"
+                            android:text="Closed"
+                            android:textColor="@color/greytexthead"
+                            android:textSize="20sp"
+                            app:typeface="fonts/Gotham-Book.ttf" />
+
+                        <com.yogesh.wordzapp.utils.TextView
+                            android:layout_width="@dimen/table_width_small"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:background="#AA4586"
+                            android:gravity="center"
+                            android:text="Closed"
+                            android:textColor="@color/greytexthead"
+                            android:textSize="20sp"
+                            app:typeface="fonts/Gotham-Book.ttf" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:orientation="horizontal">
+
+
+                        <com.yogesh.wordzapp.utils.TextView
+                            android:layout_width="@dimen/table_width_small"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:background="#A9FFCB"
+                            android:gravity="center"
+                            android:text="Jaypee MUN"
+                            android:textColor="@color/greytexthead"
+                            android:textSize="20sp"
+                            app:typeface="fonts/Gotham-Book.ttf" />
+
+                        <com.yogesh.wordzapp.utils.TextView
+                            android:layout_width="@dimen/table_width_small"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:background="#B6EEA6"
+                            android:gravity="center"
+                            android:text="Noida,Uttar Pradesh"
+                            android:textColor="@color/greytexthead"
+                            android:textSize="20sp"
+                            app:typeface="fonts/Gotham-Book.ttf" />
+
+                        <com.yogesh.wordzapp.utils.TextView
+                            android:layout_width="@dimen/table_width_small"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:background="#C0B298"
+                            android:gravity="center"
+                            android:text="7-8 Feb’15"
+                            android:textColor="@color/greytexthead"
+                            android:textSize="20sp"
+                            app:typeface="fonts/Gotham-Book.ttf" />
+
+                        <com.yogesh.wordzapp.utils.TextView
+                            android:layout_width="@dimen/table_width_small"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:background="#A4778B"
+                            android:gravity="center"
+                            android:text="Closed"
+                            android:textColor="@color/greytexthead"
+                            android:textSize="20sp"
+                            app:typeface="fonts/Gotham-Book.ttf" />
+
+                        <com.yogesh.wordzapp.utils.TextView
+                            android:layout_width="@dimen/table_width_small"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:background="#AA4586"
+                            android:gravity="center"
+                            android:text="Open"
+                            android:textColor="@color/greytexthead"
+                            android:textSize="20sp"
+                            app:typeface="fonts/Gotham-Book.ttf" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:orientation="horizontal">
+
+
+                        <com.yogesh.wordzapp.utils.TextView
+                            android:layout_width="@dimen/table_width_small"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:background="#A9FFCB"
+                            android:gravity="center"
+                            android:text="BITS MUN"
+                            android:textColor="@color/greytexthead"
+                            android:textSize="20sp"
+                            app:typeface="fonts/Gotham-Book.ttf" />
+
+                        <com.yogesh.wordzapp.utils.TextView
+                            android:layout_width="@dimen/table_width_small"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:background="#B6EEA6"
+                            android:gravity="center"
+                            android:text="Pilani,Rajasthan"
+                            android:textColor="@color/greytexthead"
+                            android:textSize="20sp"
+                            app:typeface="fonts/Gotham-Book.ttf" />
+
+                        <com.yogesh.wordzapp.utils.TextView
+                            android:layout_width="@dimen/table_width_small"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:background="#C0B298"
+                            android:gravity="center"
+                            android:text="13-14 Feb’15"
+                            android:textColor="@color/greytexthead"
+                            android:textSize="20sp"
+                            app:typeface="fonts/Gotham-Book.ttf" />
+
+                        <com.yogesh.wordzapp.utils.TextView
+                            android:layout_width="@dimen/table_width_small"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:background="#A4778B"
+                            android:gravity="center"
+                            android:text="Closed"
+                            android:textColor="@color/greytexthead"
+                            android:textSize="20sp"
+                            app:typeface="fonts/Gotham-Book.ttf" />
+
+                        <com.yogesh.wordzapp.utils.TextView
+                            android:layout_width="@dimen/table_width_small"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:background="#AA4586"
+                            android:gravity="center"
+                            android:text="Open"
+                            android:textColor="@color/greytexthead"
+                            android:textSize="20sp"
+                            app:typeface="fonts/Gotham-Book.ttf" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:orientation="horizontal">
+
+
+                        <com.yogesh.wordzapp.utils.TextView
+                            android:layout_width="@dimen/table_width_small"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:background="#A9FFCB"
+                            android:gravity="center"
+                            android:text="SymBhav MUN"
+                            android:textColor="@color/greytexthead"
+                            android:textSize="20sp"
+                            app:typeface="fonts/Gotham-Book.ttf" />
+
+                        <com.yogesh.wordzapp.utils.TextView
+                            android:layout_width="@dimen/table_width_small"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:background="#B6EEA6"
+                            android:gravity="center"
+                            android:text="Pune,Maharashthra"
+                            android:textColor="@color/greytexthead"
+                            android:textSize="20sp"
+                            app:typeface="fonts/Gotham-Book.ttf" />
+
+                        <com.yogesh.wordzapp.utils.TextView
+                            android:layout_width="@dimen/table_width_small"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:background="#C0B298"
+                            android:gravity="center"
+                            android:text="20-22 Feb’15"
+                            android:textColor="@color/greytexthead"
+                            android:textSize="20sp"
+                            app:typeface="fonts/Gotham-Book.ttf" />
+
+                        <com.yogesh.wordzapp.utils.TextView
+                            android:layout_width="@dimen/table_width_small"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:background="#A4778B"
+                            android:gravity="center"
+                            android:text="Closed"
+                            android:textColor="@color/greytexthead"
+                            android:textSize="20sp"
+                            app:typeface="fonts/Gotham-Book.ttf" />
+
+                        <com.yogesh.wordzapp.utils.TextView
+                            android:layout_width="@dimen/table_width_small"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:background="#AA4586"
+                            android:gravity="center"
+                            android:text="Open"
+                            android:textColor="@color/greytexthead"
+                            android:textSize="20sp"
+                            app:typeface="fonts/Gotham-Book.ttf" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:orientation="horizontal">
+
+
+                        <com.yogesh.wordzapp.utils.TextView
+                            android:layout_width="@dimen/table_width_small"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:background="#A9FFCB"
+                            android:gravity="center"
+                            android:text="SRCC MUN"
+                            android:textColor="@color/greytexthead"
+                            android:textSize="20sp"
+                            app:typeface="fonts/Gotham-Book.ttf" />
+
+                        <com.yogesh.wordzapp.utils.TextView
+                            android:layout_width="@dimen/table_width_small"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:background="#B6EEA6"
+                            android:gravity="center"
+                            android:text="New Delhi"
+                            android:textColor="@color/greytexthead"
+                            android:textSize="20sp"
+                            app:typeface="fonts/Gotham-Book.ttf" />
+
+                        <com.yogesh.wordzapp.utils.TextView
+                            android:layout_width="@dimen/table_width_small"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:background="#C0B298"
+                            android:gravity="center"
+                            android:text="21-22 Feb’15"
+                            android:textColor="@color/greytexthead"
+                            android:textSize="20sp"
+                            app:typeface="fonts/Gotham-Book.ttf" />
+
+                        <com.yogesh.wordzapp.utils.TextView
+                            android:layout_width="@dimen/table_width_small"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:background="#A4778B"
+                            android:gravity="center"
+                            android:text="Closed"
+                            android:textColor="@color/greytexthead"
+                            android:textSize="20sp"
+                            app:typeface="fonts/Gotham-Book.ttf" />
+
+                        <com.yogesh.wordzapp.utils.TextView
+                            android:layout_width="@dimen/table_width_small"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:background="#AA4586"
+                            android:gravity="center"
+                            android:text="Open"
+                            android:textColor="@color/greytexthead"
+                            android:textSize="20sp"
+                            app:typeface="fonts/Gotham-Book.ttf" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:orientation="horizontal">
+
+
+                        <com.yogesh.wordzapp.utils.TextView
+                            android:layout_width="@dimen/table_width_small"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:background="#A9FFCB"
+                            android:gravity="center"
+                            android:text="LSR MUN"
+                            android:textColor="@color/greytexthead"
+                            android:textSize="20sp"
+                            app:typeface="fonts/Gotham-Book.ttf" />
+
+                        <com.yogesh.wordzapp.utils.TextView
+                            android:layout_width="@dimen/table_width_small"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:background="#B6EEA6"
+                            android:gravity="center"
+                            android:text="New Delhi"
+                            android:textColor="@color/greytexthead"
+                            android:textSize="20sp"
+                            app:typeface="fonts/Gotham-Book.ttf" />
+
+                        <com.yogesh.wordzapp.utils.TextView
+                            android:layout_width="@dimen/table_width_small"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:background="#C0B298"
+                            android:gravity="center"
+                            android:text="13-14 Feb’15"
+                            android:textColor="@color/greytexthead"
+                            android:textSize="20sp"
+                            app:typeface="fonts/Gotham-Book.ttf" />
+
+                        <com.yogesh.wordzapp.utils.TextView
+                            android:layout_width="@dimen/table_width_small"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:background="#A4778B"
+                            android:gravity="center"
+                            android:text="Closed"
+                            android:textColor="@color/greytexthead"
+                            android:textSize="20sp"
+                            app:typeface="fonts/Gotham-Book.ttf" />
+
+                        <com.yogesh.wordzapp.utils.TextView
+                            android:layout_width="@dimen/table_width_small"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:background="#AA4586"
+                            android:gravity="center"
+                            android:text="Open"
+                            android:textColor="@color/greytexthead"
+                            android:textSize="20sp"
+                            app:typeface="fonts/Gotham-Book.ttf" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:orientation="horizontal">
+
+
+                        <com.yogesh.wordzapp.utils.TextView
+                            android:layout_width="@dimen/table_width_small"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:background="#A9FFCB"
+                            android:gravity="center"
+                            android:text="Zenith MUN"
+                            android:textColor="@color/greytexthead"
+                            android:textSize="20sp"
+                            app:typeface="fonts/Gotham-Book.ttf" />
+
+                        <com.yogesh.wordzapp.utils.TextView
+                            android:layout_width="@dimen/table_width_small"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:background="#B6EEA6"
+                            android:gravity="center"
+                            android:text="New Delhi"
+                            android:textColor="@color/greytexthead"
+                            android:textSize="20sp"
+                            app:typeface="fonts/Gotham-Book.ttf" />
+
+                        <com.yogesh.wordzapp.utils.TextView
+                            android:layout_width="@dimen/table_width_small"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:background="#C0B298"
+                            android:gravity="center"
+                            android:text="14-15 Mar’15"
+                            android:textColor="@color/greytexthead"
+                            android:textSize="20sp"
+                            app:typeface="fonts/Gotham-Book.ttf" />
+
+                        <com.yogesh.wordzapp.utils.TextView
+                            android:layout_width="@dimen/table_width_small"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:background="#A4778B"
+                            android:gravity="center"
+                            android:text="Closed"
+                            android:textColor="@color/greytexthead"
+                            android:textSize="20sp"
+                            app:typeface="fonts/Gotham-Book.ttf" />
+
+                        <com.yogesh.wordzapp.utils.TextView
+                            android:layout_width="@dimen/table_width_small"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:background="#AA4586"
+                            android:gravity="center"
+                            android:text="Open"
+                            android:textColor="@color/greytexthead"
+                            android:textSize="20sp"
+                            app:typeface="fonts/Gotham-Book.ttf" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:orientation="horizontal">
+
+
+                        <com.yogesh.wordzapp.utils.TextView
+                            android:layout_width="@dimen/table_width_small"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:background="#A9FFCB"
+                            android:gravity="center"
+                            android:text="IPU MUN"
+                            android:textColor="@color/greytexthead"
+                            android:textSize="20sp"
+                            app:typeface="fonts/Gotham-Book.ttf" />
+
+                        <com.yogesh.wordzapp.utils.TextView
+                            android:layout_width="@dimen/table_width_small"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:background="#B6EEA6"
+                            android:gravity="center"
+                            android:text="New Delhi"
+                            android:textColor="@color/greytexthead"
+                            android:textSize="20sp"
+                            app:typeface="fonts/Gotham-Book.ttf" />
+
+                        <com.yogesh.wordzapp.utils.TextView
+                            android:layout_width="@dimen/table_width_small"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:background="#C0B298"
+                            android:gravity="center"
+                            android:text="7-8th Mar’15"
+                            android:textColor="@color/greytexthead"
+                            android:textSize="20sp"
+                            app:typeface="fonts/Gotham-Book.ttf" />
+
+                        <com.yogesh.wordzapp.utils.TextView
+                            android:layout_width="@dimen/table_width_small"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:background="#A4778B"
+                            android:gravity="center"
+                            android:text="Closed"
+                            android:textColor="@color/greytexthead"
+                            android:textSize="20sp"
+                            app:typeface="fonts/Gotham-Book.ttf" />
+
+                        <com.yogesh.wordzapp.utils.TextView
+                            android:layout_width="@dimen/table_width_small"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:background="#AA4586"
+                            android:gravity="center"
+                            android:text="OPen"
+                            android:textColor="@color/greytexthead"
+                            android:textSize="20sp"
+                            app:typeface="fonts/Gotham-Book.ttf" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:orientation="horizontal">
+
+
+                        <com.yogesh.wordzapp.utils.TextView
+                            android:layout_width="@dimen/table_width_small"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:background="#A9FFCB"
+                            android:gravity="center"
+                            android:text="NSIT MUN "
+                            android:textColor="@color/greytexthead"
+                            android:textSize="20sp"
+                            app:typeface="fonts/Gotham-Book.ttf" />
+
+                        <com.yogesh.wordzapp.utils.TextView
+                            android:layout_width="@dimen/table_width_small"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:background="#B6EEA6"
+                            android:gravity="center"
+                            android:text="New Delhi"
+                            android:textColor="@color/greytexthead"
+                            android:textSize="20sp"
+                            app:typeface="fonts/Gotham-Book.ttf" />
+
+                        <com.yogesh.wordzapp.utils.TextView
+                            android:layout_width="@dimen/table_width_small"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:background="#C0B298"
+                            android:gravity="center"
+                            android:text="29-30th Mar’15"
+                            android:textColor="@color/greytexthead"
+                            android:textSize="20sp"
+                            app:typeface="fonts/Gotham-Book.ttf" />
+
+                        <com.yogesh.wordzapp.utils.TextView
+                            android:layout_width="@dimen/table_width_small"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:background="#A4778B"
+                            android:gravity="center"
+                            android:text="Open(No Deadline)"
+                            android:textColor="@color/greytexthead"
+                            android:textSize="20sp"
+                            app:typeface="fonts/Gotham-Book.ttf" />
+
+                        <com.yogesh.wordzapp.utils.TextView
+                            android:layout_width="@dimen/table_width_small"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:background="#AA4586"
+                            android:gravity="center"
+                            android:text="-"
+                            android:textColor="@color/greytexthead"
+                            android:textSize="20sp"
+                            app:typeface="fonts/Gotham-Book.ttf" />
+
+                    </LinearLayout>
+                    
+                </LinearLayout>
+            </HorizontalScrollView>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

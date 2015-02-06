@@ -1,10 +1,13 @@
 package com.yogesh.wordzapp;
 
-import android.support.v7.app.ActionBarActivity;
+import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 
 public class WordzSchedule extends ActionBarActivity {
@@ -23,7 +26,9 @@ public class WordzSchedule extends ActionBarActivity {
         toolbar.setTitle(mTitle);
         toolbar.setTitleTextColor(getResources().getColor(R.color.White));
         setSupportActionBar(toolbar);
-
+        if(Build.VERSION.SDK_INT>=Build.VERSION_CODES.LOLLIPOP){
+            toolbar.setElevation(10f);
+        }
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeButtonEnabled(true);
         
@@ -31,6 +36,16 @@ public class WordzSchedule extends ActionBarActivity {
     }
 
 
+    public void CALENDER(final View view){
+        Intent intent = new Intent(this, MUNCalender.class);
+        startActivity(intent);
+    }
+
+    public void MUNLIST(final View view){
+        Intent intent = new Intent(this, MUNList.class);
+        startActivity(intent);
+    }
+    
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -52,4 +67,6 @@ public class WordzSchedule extends ActionBarActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+    
 }
