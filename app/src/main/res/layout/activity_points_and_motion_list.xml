@@ -35,465 +35,496 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/toolbar">
 
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scrollbarAlwaysDrawHorizontalTrack="true"
+            android:scrollbars="none">
         <LinearLayout
-            android:weightSum="8"
-            android:layout_marginLeft="3dp"
-            android:layout_marginRight="3dp"
+            android:layout_margin="5dp"
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:background="@drawable/abc_popup_background_mtrl_mult">
 
+            
             <com.yogesh.wordzapp.utils.TextView
                 android:gravity="center"
-                android:layout_weight="1"
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/table_width"
                 android:layout_height="wrap_content"
                 android:textColor="@color/greytexthead"
                 android:text="Motions"
                 android:textSize="20sp"
                 android:background="#FFADC6"
-                android:layout_marginTop="8dp"
+                android:layout_margin="8dp"
                 app:typeface="fonts/Gotham-Book.ttf"/>
 
             <com.yogesh.wordzapp.utils.TextView
                 android:gravity="center"
-                android:layout_weight="6"
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/table_width"
                 android:layout_height="wrap_content"
                 android:textColor="@color/greytexthead"
                 android:text="Description"
                 android:textSize="20sp"
                 android:background="#E3C5BB"
-                android:layout_marginTop="8dp"
+                android:layout_margin="8dp"
                 app:typeface="fonts/Gotham-Book.ttf"/>
 
             <com.yogesh.wordzapp.utils.TextView
                 android:gravity="center"
-                android:layout_weight="1"
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/table_width"
                 android:layout_height="wrap_content"
                 android:textColor="@color/greytexthead"
                 android:text="Vote to Pass"
                 android:textSize="20sp"
                 android:background="#DFE2CF"
-                android:layout_marginTop="8dp"
+                android:layout_margin="8dp"
                 app:typeface="fonts/Gotham-Book.ttf"/>
             
             </LinearLayout>
-
+        </HorizontalScrollView>
+        
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scrollbarAlwaysDrawHorizontalTrack="true"
+            android:scrollbars="none">    
         <LinearLayout
-            android:weightSum="8"
             android:layout_marginLeft="3dp"
             android:layout_marginRight="3dp"
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:background="@drawable/abc_popup_background_mtrl_mult">
 
             <com.yogesh.wordzapp.utils.TextView
                 android:gravity="center"
-                android:layout_weight="1"
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/table_width"
                 android:layout_height="wrap_content"
                 android:textColor="@color/greytextdetail"
                 android:text="Suspend the Meeting"
                 android:textSize="18sp"
                 android:background="#FFADC6"
-                android:layout_marginTop="6dp"
+                android:layout_margin="6dp"
                 app:typeface="fonts/Gotham-Book.ttf"/>
 
             <com.yogesh.wordzapp.utils.TextView
                 android:gravity="center"
-                android:layout_weight="6"
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/table_width"
                 android:layout_height="wrap_content"
                 android:textColor="@color/greytextdetail"
                 android:text="Suspending the meeting means calling for a moderated or unmoderated caucus. When moving to suspend the meeting, delegates should specify the purpose for and length of the suspension. This motion requires an immediate vote."
                 android:textSize="18sp"
                 android:background="#E3C5BB"
-                android:layout_marginTop="6dp"
+                android:layout_margin="6dp"
                 app:typeface="fonts/Gotham-Book.ttf"/>
 
             <com.yogesh.wordzapp.utils.TextView
                 android:gravity="center"
-                android:layout_weight="1"
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/table_width"
                 android:layout_height="wrap_content"
                 android:textColor="@color/greytextdetail"
                 android:text="Simple majority"
                 android:textSize="18sp"
                 android:background="#DFE2CF"
-                android:layout_marginTop="6dp"
+                android:layout_margin="6dp"
                 app:typeface="fonts/Gotham-Book.ttf"/>
 
         </LinearLayout>
+        </HorizontalScrollView>
 
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scrollbarAlwaysDrawHorizontalTrack="true"
+            android:scrollbars="none">
         <LinearLayout
-            android:weightSum="8"
             android:layout_marginLeft="3dp"
             android:layout_marginRight="3dp"
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:background="@drawable/abc_popup_background_mtrl_mult">
 
             <com.yogesh.wordzapp.utils.TextView
                 android:gravity="center"
-                android:layout_weight="1"
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/table_width"
                 android:layout_height="wrap_content"
                 android:textColor="@color/greytextdetail"
                 android:text="Adjourn Meeting"
                 android:textSize="18sp"
                 android:background="#FFADC6"
-                android:layout_marginTop="6dp"
+                android:layout_margin="6dp"
                 app:typeface="fonts/Gotham-Book.ttf"/>
 
             <com.yogesh.wordzapp.utils.TextView
                 android:gravity="center"
-                android:layout_weight="6"
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/table_width"
                 android:layout_height="wrap_content"
                 android:textColor="@color/greytextdetail"
                 android:text="Adjourning the meeting ends the committee session until the next session, which may be held the following year. The motion is most commonly made to end a committee session for the purpose of lunch or dinner. It requires an immediate vote."
                 android:textSize="18sp"
                 android:background="#E3C5BB"
-                android:layout_marginTop="6dp"
+                android:layout_margin="6dp"
                 app:typeface="fonts/Gotham-Book.ttf"/>
 
             <com.yogesh.wordzapp.utils.TextView
                 android:gravity="center"
-                android:layout_weight="1"
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/table_width"
                 android:layout_height="wrap_content"
                 android:textColor="@color/greytextdetail"
                 android:text="Simple majority"
                 android:textSize="18sp"
                 android:background="#DFE2CF"
-                android:layout_marginTop="6dp"
+                android:layout_margin="6dp"
                 app:typeface="fonts/Gotham-Book.ttf"/>
 
         </LinearLayout>
+        </HorizontalScrollView>
 
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scrollbarAlwaysDrawHorizontalTrack="true"
+            android:scrollbars="none">
         <LinearLayout
-            android:weightSum="8"
             android:layout_marginLeft="3dp"
             android:layout_marginRight="3dp"
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:background="@drawable/abc_popup_background_mtrl_mult">
 
             <com.yogesh.wordzapp.utils.TextView
                 android:gravity="center"
-                android:layout_weight="1"
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/table_width"
                 android:layout_height="wrap_content"
                 android:textColor="@color/greytextdetail"
                 android:text="Table Debate"
                 android:textSize="18sp"
                 android:background="#FFADC6"
-                android:layout_marginTop="6dp"
+                android:layout_margin="6dp"
                 app:typeface="fonts/Gotham-Book.ttf"/>
 
             <com.yogesh.wordzapp.utils.TextView
                 android:gravity="center"
-                android:layout_weight="6"
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/table_width"
                 android:layout_height="wrap_content"
                 android:textColor="@color/greytextdetail"
                 android:text="This motion must not be confused with the motion to adjourn the meeting. Tabling debate ends debate on the topic. Delegates can table debate, move on to another topic and return to the first topic at a later time. Before going to a vote, two delegates must speak in favour of tabling debate and two speak against it."
                 android:textSize="18sp"
                 android:background="#E3C5BB"
-                android:layout_marginTop="6dp"
+                android:layout_margin="6dp"
                 app:typeface="fonts/Gotham-Book.ttf"/>
 
             <com.yogesh.wordzapp.utils.TextView
                 android:gravity="center"
-                android:layout_weight="1"
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/table_width"
                 android:layout_height="wrap_content"
                 android:textColor="@color/greytextdetail"
                 android:text="Two-thirds majority"
                 android:textSize="18sp"
                 android:background="#DFE2CF"
-                android:layout_marginTop="6dp"
+                android:layout_margin="6dp"
                 app:typeface="fonts/Gotham-Book.ttf"/>
 
         </LinearLayout>
+        </HorizontalScrollView>
 
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scrollbarAlwaysDrawHorizontalTrack="true"
+            android:scrollbars="none">
         <LinearLayout
-            android:weightSum="8"
             android:layout_marginLeft="3dp"
             android:layout_marginRight="3dp"
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:background="@drawable/abc_popup_background_mtrl_mult">
 
             <com.yogesh.wordzapp.utils.TextView
                 android:gravity="center"
-                android:layout_weight="1"
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/table_width"
                 android:layout_height="wrap_content"
                 android:textColor="@color/greytextdetail"
                 android:text="Close Debate"
                 android:textSize="18sp"
                 android:background="#FFADC6"
-                android:layout_marginTop="6dp"
+                android:layout_margin="6dp"
                 app:typeface="fonts/Gotham-Book.ttf"/>
 
             <com.yogesh.wordzapp.utils.TextView
                 android:gravity="center"
-                android:layout_weight="6"
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/table_width"
                 android:layout_height="wrap_content"
                 android:textColor="@color/greytextdetail"
                 android:text="Closing debate allows the committee to move into voting procedure. Once a delegate feels that his or her country’s position has been made clear, that there are enough draft resolutions on the floor and that all other delegates are ready, he or she can move for the closure of debate. Two delegates usually speak against the closure of debate. None speak for it."
                 android:textSize="18sp"
                 android:background="#E3C5BB"
-                android:layout_marginTop="6dp"
+                android:layout_margin="6dp"
                 app:typeface="fonts/Gotham-Book.ttf"/>
 
             <com.yogesh.wordzapp.utils.TextView
                 android:gravity="center"
-                android:layout_weight="1"
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/table_width"
                 android:layout_height="wrap_content"
                 android:textColor="@color/greytextdetail"
                 android:text="Two-thirds majority"
                 android:textSize="18sp"
                 android:background="#DFE2CF"
-                android:layout_marginTop="6dp"
+                android:layout_margin="6dp"
                 app:typeface="fonts/Gotham-Book.ttf"/>
 
         </LinearLayout>
+        </HorizontalScrollView>
 
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scrollbarAlwaysDrawHorizontalTrack="true"
+            android:scrollbars="none">
         <LinearLayout
-            android:weightSum="8"
             android:layout_marginLeft="3dp"
             android:layout_marginRight="3dp"
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:background="@drawable/abc_popup_background_mtrl_mult">
 
             <com.yogesh.wordzapp.utils.TextView
                 android:gravity="center"
-                android:layout_weight="1"
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/table_width"
                 android:layout_height="wrap_content"
                 android:textColor="@color/greytextdetail"
                 android:text="Appeal the Chair’s Decision"
                 android:textSize="18sp"
                 android:background="#FFADC6"
-                android:layout_marginTop="6dp"
+                android:layout_margin="6dp"
                 app:typeface="fonts/Gotham-Book.ttf"/>
 
             <com.yogesh.wordzapp.utils.TextView
                 android:gravity="center"
-                android:layout_weight="6"
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/table_width"
                 android:layout_height="wrap_content"
                 android:textColor="@color/greytextdetail"
                 android:text="This motion is made when a delegate feels that the chairperson has made an incorrect decision. The appeal must first be made in writing."
                 android:textSize="18sp"
                 android:background="#E3C5BB"
-                android:layout_marginTop="6dp"
+                android:layout_margin="6dp"
                 app:typeface="fonts/Gotham-Book.ttf"/>
 
             <com.yogesh.wordzapp.utils.TextView
                 android:gravity="center"
-                android:layout_weight="1"
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/table_width"
                 android:layout_height="wrap_content"
                 android:textColor="@color/greytextdetail"
                 android:text="No vote"
                 android:textSize="18sp"
                 android:background="#DFE2CF"
-                android:layout_marginTop="6dp"
+                android:layout_margin="6dp"
                 app:typeface="fonts/Gotham-Book.ttf"/>
 
         </LinearLayout>
+        </HorizontalScrollView>
 
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scrollbarAlwaysDrawHorizontalTrack="true"
+            android:scrollbars="none">
         <LinearLayout
-            android:weightSum="8"
             android:layout_marginLeft="3dp"
             android:layout_marginRight="3dp"
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:background="@drawable/abc_popup_background_mtrl_mult">
 
             <com.yogesh.wordzapp.utils.TextView
                 android:gravity="center"
-                android:layout_weight="1"
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/table_width"
                 android:layout_height="wrap_content"
                 android:textColor="@color/greytextdetail"
                 android:text="Point of Order"
                 android:textSize="18sp"
                 android:background="#FFADC6"
-                android:layout_marginTop="6dp"
+                android:layout_margin="6dp"
                 app:typeface="fonts/Gotham-Book.ttf"/>
 
             <com.yogesh.wordzapp.utils.TextView
                 android:gravity="center"
-                android:layout_weight="6"
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/table_width"
                 android:layout_height="wrap_content"
                 android:textColor="@color/greytextdetail"
                 android:text="Points of order are used when delegates believe the chair has made an error in the running of the committee. Delegates rising to points of order may not speak on the substance of the matter under discussion. They should only specify the errors they believe were made in the formal committee procedure."
                 android:textSize="18sp"
                 android:background="#E3C5BB"
-                android:layout_marginTop="6dp"
+                android:layout_margin="6dp"
                 app:typeface="fonts/Gotham-Book.ttf"/>
 
             <com.yogesh.wordzapp.utils.TextView
                 android:gravity="center"
-                android:layout_weight="1"
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/table_width"
                 android:layout_height="wrap_content"
                 android:textColor="@color/greytextdetail"
                 android:text="No vote"
                 android:textSize="18sp"
                 android:background="#DFE2CF"
-                android:layout_marginTop="6dp"
+                android:layout_margin="6dp"
                 app:typeface="fonts/Gotham-Book.ttf"/>
 
         </LinearLayout>
+        </HorizontalScrollView>
 
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scrollbarAlwaysDrawHorizontalTrack="true"
+            android:scrollbars="none">
         <LinearLayout
-            android:weightSum="8"
             android:layout_marginLeft="3dp"
             android:layout_marginRight="3dp"
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:background="@drawable/abc_popup_background_mtrl_mult">
 
             <com.yogesh.wordzapp.utils.TextView
                 android:gravity="center"
-                android:layout_weight="1"
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/table_width"
                 android:layout_height="wrap_content"
                 android:textColor="@color/greytextdetail"
                 android:text="Point of Inquiry"
                 android:textSize="18sp"
                 android:background="#FFADC6"
-                android:layout_marginTop="6dp"
+                android:layout_margin="6dp"
                 app:typeface="fonts/Gotham-Book.ttf"/>
 
             <com.yogesh.wordzapp.utils.TextView
                 android:gravity="center"
-                android:layout_weight="6"
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/table_width"
                 android:layout_height="wrap_content"
                 android:textColor="@color/greytextdetail"
                 android:text="When the floor is open (i.e., no other delegate is speaking), a delegate may rise to a point of inquiry in order to ask the chairperson a question regarding the rules of procedure."
                 android:textSize="18sp"
                 android:background="#E3C5BB"
-                android:layout_marginTop="6dp"
+                android:layout_margin="6dp"
                 app:typeface="fonts/Gotham-Book.ttf"/>
 
             <com.yogesh.wordzapp.utils.TextView
                 android:gravity="center"
-                android:layout_weight="1"
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/table_width"
                 android:layout_height="wrap_content"
                 android:textColor="@color/greytextdetail"
                 android:text="No vote"
                 android:textSize="18sp"
                 android:background="#DFE2CF"
-                android:layout_marginTop="6dp"
+                android:layout_margin="6dp"
                 app:typeface="fonts/Gotham-Book.ttf"/>
 
         </LinearLayout>
+        </HorizontalScrollView>
 
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scrollbarAlwaysDrawHorizontalTrack="true"
+            android:scrollbars="none">
         <LinearLayout
-            android:weightSum="8"
             android:layout_marginLeft="3dp"
             android:layout_marginRight="3dp"
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:background="@drawable/abc_popup_background_mtrl_mult">
 
             <com.yogesh.wordzapp.utils.TextView
                 android:gravity="center"
-                android:layout_weight="1"
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/table_width"
                 android:layout_height="wrap_content"
                 android:textColor="@color/greytextdetail"
                 android:text="Point of Personal Privilege"
                 android:textSize="18sp"
                 android:background="#FFADC6"
-                android:layout_marginTop="6dp"
+                android:layout_margin="6dp"
                 app:typeface="fonts/Gotham-Book.ttf"/>
 
             <com.yogesh.wordzapp.utils.TextView
                 android:gravity="center"
-                android:layout_weight="6"
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/table_width"
                 android:layout_height="wrap_content"
                 android:textColor="@color/greytextdetail"
                 android:text="Points of personal privilege are used to inform the chairperson of a physical discomfort a delegate is experiencing, such as the inability to hear another delegate’s speech."
                 android:textSize="18sp"
                 android:background="#E3C5BB"
-                android:layout_marginTop="6dp"
+                android:layout_margin="6dp"
                 app:typeface="fonts/Gotham-Book.ttf"/>
 
             <com.yogesh.wordzapp.utils.TextView
                 android:gravity="center"
-                android:layout_weight="1"
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/table_width"
                 android:layout_height="wrap_content"
                 android:textColor="@color/greytextdetail"
                 android:text="No vote"
                 android:textSize="18sp"
                 android:background="#DFE2CF"
-                android:layout_marginTop="6dp"
+                android:layout_margin="6dp"
                 app:typeface="fonts/Gotham-Book.ttf"/>
 
         </LinearLayout>
+        </HorizontalScrollView>
 
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scrollbarAlwaysDrawHorizontalTrack="true"
+            android:scrollbars="none">
         <LinearLayout
-            android:weightSum="8"
             android:layout_marginLeft="3dp"
             android:layout_marginRight="3dp"
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:background="@drawable/abc_popup_background_mtrl_mult">
 
             <com.yogesh.wordzapp.utils.TextView
                 android:gravity="center"
-                android:layout_weight="1"
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/table_width"
                 android:layout_height="wrap_content"
                 android:textColor="@color/greytextdetail"
                 android:text="Point of Information"
                 android:textSize="18sp"
                 android:background="#FFADC6"
-                android:layout_marginTop="6dp"
+                android:layout_margin="6dp"
                 app:typeface="fonts/Gotham-Book.ttf"/>
 
             <com.yogesh.wordzapp.utils.TextView
                 android:gravity="center"
                 android:layout_weight="6"
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/table_width"
                 android:layout_height="wrap_content"
                 android:textColor="@color/greytextdetail"
                 android:text="After a delegate has given a speech in formal debate, he or she may yield time to points of information, or questions from other delegates concerning the speech."
                 android:textSize="18sp"
                 android:background="#E3C5BB"
-                android:layout_marginTop="6dp"
+                android:layout_margin="6dp"
                 app:typeface="fonts/Gotham-Book.ttf"/>
 
             <com.yogesh.wordzapp.utils.TextView
                 android:gravity="center"
-                android:layout_weight="1"
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/table_width"
                 android:layout_height="wrap_content"
                 android:textColor="@color/greytextdetail"
                 android:text="No vote"
                 android:textSize="18sp"
                 android:background="#DFE2CF"
-                android:layout_marginTop="6dp"
+                android:layout_margin="6dp"
                 app:typeface="fonts/Gotham-Book.ttf"/>
 
         </LinearLayout>
+        </HorizontalScrollView>
 
         <LinearLayout
             android:layout_marginLeft="3dp"
@@ -509,11 +540,8 @@
                 android:text="PAGE 74
 THE 2006 UNA-USAMODEL UNITED NATIONS CONFERENCE ADVISORS GUIDE"
                 android:textSize="10sp"
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="25dp"
                 app:typeface="fonts/Gotham-Book.ttf"/>
-
-
-
         </LinearLayout>
 
     </LinearLayout>

@@ -59,8 +59,7 @@
         <activity
             android:name=".PointsAndMotionList"
             android:label="@string/title_activity_points_and_motion_list"
-            android:parentActivityName=".WordzBasic"
-            android:screenOrientation="landscape" >
+            android:parentActivityName=".WordzBasic" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.yogesh.wordzapp.WordzBasic" />
@@ -84,8 +83,7 @@
         <activity
             android:name=".PointsAndMotionUsage"
             android:label="@string/title_activity_points_and_motion_usage"
-            android:parentActivityName=".WordzBasic"
-            android:screenOrientation="landscape">
+            android:parentActivityName=".WordzBasic">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.yogesh.wordzapp.WordzBasic" />
