@@ -88,22 +88,6 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.yogesh.wordzapp.WordzBasic" />
         </activity>
-        <activity
-            android:name=".MUNCalender"
-            android:label="@string/title_activity_muncalender"
-            android:parentActivityName=".WordzSchedule" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.yogesh.wordzapp.WordzSchedule" />
-        </activity>
-        <activity
-            android:name=".MUNList"
-            android:label="@string/title_activity_munlist"
-            android:parentActivityName=".WordzSchedule" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.yogesh.wordzapp.WordzSchedule" />
-        </activity>
     </application>
 
 </manifest>

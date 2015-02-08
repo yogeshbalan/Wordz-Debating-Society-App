@@ -1,12 +1,11 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.yogesh.wordzapp.PointsAndMotionUsage">
 
-    <android.support.v7.widget.Toolbar
-        xmlns:app="http://schemas.android.com/apk/res-auto"
+    <android.support.v7.widget.Toolbar xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -14,12 +13,12 @@
         app:theme="@style/myCustomTheme">
 
         <TextView
+            android:id="@+id/toolbar_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text=""
-            android:textSize="20sp"
             android:layout_gravity="center"
-            android:id="@+id/toolbar_title" />
+            android:text=""
+            android:textSize="20sp" />
     </android.support.v7.widget.Toolbar>
 
 
@@ -28,420 +27,430 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/toolbar">
 
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/toolbar">
-
-        <HorizontalScrollView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:scrollbarAlwaysDrawHorizontalTrack="true"
-            android:scrollbars="none">
         <LinearLayout
-        android:layout_marginLeft="3dp"
-        android:layout_marginRight="3dp"
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/abc_popup_background_mtrl_mult">
-
-        <com.yogesh.wordzapp.utils.TextView
-            android:gravity="center"
-            android:layout_width="@dimen/table_width"
-            android:layout_height="wrap_content"
-            android:textColor="@color/greytexthead"
-            android:text="Description"
-            android:textSize="20sp"
-            android:background="#FFADC6"
-            android:layout_margin="8dp"
-            app:typeface="fonts/Gotham-Book.ttf"/>
-
-        <com.yogesh.wordzapp.utils.TextView
-            android:gravity="center"
-            android:layout_width="@dimen/table_width"
-            android:layout_height="wrap_content"
-            android:textColor="@color/greytexthead"
-            android:text="What do you say?"
-            android:textSize="20sp"
-            android:background="#E3C5BB"
-            android:layout_margin="8dp"
-            app:typeface="fonts/Gotham-Book.ttf"/>
-
-    </LinearLayout>
-        </HorizontalScrollView>
-
-        <HorizontalScrollView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:scrollbarAlwaysDrawHorizontalTrack="true"
-            android:scrollbars="none">
-        <LinearLayout
-            android:layout_marginLeft="3dp"
-            android:layout_marginRight="3dp"
-            android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/abc_popup_background_mtrl_mult">
+            android:layout_below="@+id/toolbar"
+            android:orientation="vertical">
 
-            <com.yogesh.wordzapp.utils.TextView
-                android:gravity="center"
-                android:layout_width="@dimen/table_width"
-                android:layout_height="wrap_content"
-                android:textColor="@color/greytexthead"
-                android:text="The delegate has a question regarding the rules of procedure."
-                android:textSize="20sp"
-                android:background="#FFADC6"
-                android:layout_margin="8dp"
-                app:typeface="fonts/Gotham-Book.ttf"/>
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:scrollbarAlwaysDrawHorizontalTrack="true"
+                android:scrollbars="none">
 
-            <com.yogesh.wordzapp.utils.TextView
-                android:gravity="center"
-                android:layout_width="@dimen/table_width"
-                android:layout_height="wrap_content"
-                android:textColor="@color/greytexthead"
-                android:text="Honourable Chair, (Country Name) has a point of Inquiry."
-                android:textSize="20sp"
-                android:background="#E3C5BB"
-                android:layout_margin="8dp"
-                app:typeface="fonts/Gotham-Book.ttf"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:background="@drawable/abc_popup_background_mtrl_mult"
+                    android:orientation="horizontal">
 
-        </LinearLayout>
-        </HorizontalScrollView>
+                    <com.yogesh.wordzapp.utils.TextView
+                        android:layout_width="@dimen/table_width"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:background="#FFADC6"
+                        android:gravity="center"
+                        android:text="Description"
+                        android:textColor="@color/greytexthead"
+                        android:textSize="20sp"
+                        app:typeface="fonts/Gotham-Book.ttf" />
 
-        <HorizontalScrollView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:scrollbarAlwaysDrawHorizontalTrack="true"
-            android:scrollbars="none">
-        <LinearLayout
-            android:weightSum="2"
-            android:layout_marginLeft="3dp"
-            android:layout_marginRight="3dp"
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/abc_popup_background_mtrl_mult">
+                    <com.yogesh.wordzapp.utils.TextView
+                        android:layout_width="@dimen/table_width"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:background="#E3C5BB"
+                        android:gravity="center"
+                        android:text="What do you say?"
+                        android:textColor="@color/greytexthead"
+                        android:textSize="20sp"
+                        app:typeface="fonts/Gotham-Book.ttf" />
 
-            <com.yogesh.wordzapp.utils.TextView
-                android:gravity="center"
-                android:layout_width="@dimen/table_width"
-                android:layout_height="wrap_content"
-                android:textColor="@color/greytexthead"
-                android:text="Delegate wishes to adjourn the meeting until next session. Usually used to adjourn for lunch or dinner."
-                android:textSize="20sp"
-                android:background="#FFADC6"
-                android:layout_margin="8dp"
-                app:typeface="fonts/Gotham-Book.ttf"/>
+                </LinearLayout>
+            </HorizontalScrollView>
 
-            <com.yogesh.wordzapp.utils.TextView
-                android:gravity="center"
-                android:layout_width="@dimen/table_width"
-                android:layout_height="wrap_content"
-                android:textColor="@color/greytexthead"
-                android:text="Honourable Chair, (Country Name) moves to suspend debate for the purpose of lunch"
-                android:textSize="20sp"
-                android:background="#E3C5BB"
-                android:layout_margin="8dp"
-                app:typeface="fonts/Gotham-Book.ttf"/>
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:scrollbarAlwaysDrawHorizontalTrack="true"
+                android:scrollbars="none">
 
-        </LinearLayout>
-        </HorizontalScrollView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:background="@drawable/abc_popup_background_mtrl_mult"
+                    android:orientation="horizontal">
 
-        <HorizontalScrollView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:scrollbarAlwaysDrawHorizontalTrack="true"
-            android:scrollbars="none">
-        <LinearLayout
-            android:layout_marginLeft="3dp"
-            android:layout_marginRight="3dp"
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/abc_popup_background_mtrl_mult">
+                    <com.yogesh.wordzapp.utils.TextView
+                        android:layout_width="@dimen/table_width"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:background="#FFADC6"
+                        android:gravity="center"
+                        android:text="The delegate has a question regarding the rules of procedure."
+                        android:textColor="@color/greytexthead"
+                        android:textSize="20sp"
+                        app:typeface="fonts/Gotham-Book.ttf" />
 
-            <com.yogesh.wordzapp.utils.TextView
-                android:gravity="center"
-                android:layout_width="@dimen/table_width"
-                android:layout_height="wrap_content"
-                android:textColor="@color/greytexthead"
-                android:text="Delegate wishes to yield time to points of information or questions from other delegates about the speech."
-                android:textSize="20sp"
-                android:background="#FFADC6"
-                android:layout_margin="8dp"
-                app:typeface="fonts/Gotham-Book.ttf"/>
+                    <com.yogesh.wordzapp.utils.TextView
+                        android:layout_width="@dimen/table_width"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:background="#E3C5BB"
+                        android:gravity="center"
+                        android:text="Honourable Chair, (Country Name) has a point of Inquiry."
+                        android:textColor="@color/greytexthead"
+                        android:textSize="20sp"
+                        app:typeface="fonts/Gotham-Book.ttf" />
 
-            <com.yogesh.wordzapp.utils.TextView
-                android:gravity="center"
-                android:layout_width="@dimen/table_width"
-                android:layout_height="wrap_content"
-                android:textColor="@color/greytexthead"
-                android:layout_margin="8dp"
-                android:text="Honourable Chair, (Country Name) yields to points of information
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:scrollbarAlwaysDrawHorizontalTrack="true"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:background="@drawable/abc_popup_background_mtrl_mult"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <com.yogesh.wordzapp.utils.TextView
+                        android:layout_width="@dimen/table_width"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:background="#FFADC6"
+                        android:gravity="center"
+                        android:text="Delegate wishes to adjourn the meeting until next session. Usually used to adjourn for lunch or dinner."
+                        android:textColor="@color/greytexthead"
+                        android:textSize="20sp"
+                        app:typeface="fonts/Gotham-Book.ttf" />
+
+                    <com.yogesh.wordzapp.utils.TextView
+                        android:layout_width="@dimen/table_width"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:background="#E3C5BB"
+                        android:gravity="center"
+                        android:text="Honourable Chair, (Country Name) moves to suspend debate for the purpose of lunch"
+                        android:textColor="@color/greytexthead"
+                        android:textSize="20sp"
+                        app:typeface="fonts/Gotham-Book.ttf" />
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:scrollbarAlwaysDrawHorizontalTrack="true"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:background="@drawable/abc_popup_background_mtrl_mult"
+                    android:orientation="horizontal">
+
+                    <com.yogesh.wordzapp.utils.TextView
+                        android:layout_width="@dimen/table_width"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:background="#FFADC6"
+                        android:gravity="center"
+                        android:text="Delegate wishes to yield time to points of information or questions from other delegates about the speech."
+                        android:textColor="@color/greytexthead"
+                        android:textSize="20sp"
+                        app:typeface="fonts/Gotham-Book.ttf" />
+
+                    <com.yogesh.wordzapp.utils.TextView
+                        android:layout_width="@dimen/table_width"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_marginTop="8dp"
+                        android:background="#E3C5BB"
+                        android:gravity="center"
+                        android:text="Honourable Chair, (Country Name) yields to points of information
 OR
 Honourable Chair, (Country Name) is open to questions"
-                android:textSize="20sp"
-                android:background="#E3C5BB"
-                android:layout_marginTop="8dp"
-                app:typeface="fonts/Gotham-Book.ttf"/>
+                        android:textColor="@color/greytexthead"
+                        android:textSize="20sp"
+                        app:typeface="fonts/Gotham-Book.ttf" />
 
-        </LinearLayout>
-        </HorizontalScrollView>
+                </LinearLayout>
+            </HorizontalScrollView>
 
-        <HorizontalScrollView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:scrollbarAlwaysDrawHorizontalTrack="true"
-            android:scrollbars="none">
-        <LinearLayout
-            android:layout_marginLeft="3dp"
-            android:layout_marginRight="3dp"
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/abc_popup_background_mtrl_mult">
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:scrollbarAlwaysDrawHorizontalTrack="true"
+                android:scrollbars="none">
 
-            <com.yogesh.wordzapp.utils.TextView
-                android:gravity="center"
-                android:layout_width="@dimen/table_width"
-                android:layout_height="wrap_content"
-                android:textColor="@color/greytexthead"
-                android:text="Delegate wishes to tell the chair about of a physical discomfort the delegate is experience (the inability to hear another delegate’s speech, that the room is too hot, etc.)."
-                android:textSize="20sp"
-                android:background="#FFADC6"
-                android:layout_margin="8dp"
-                app:typeface="fonts/Gotham-Book.ttf"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:background="@drawable/abc_popup_background_mtrl_mult"
+                    android:orientation="horizontal">
 
-            <com.yogesh.wordzapp.utils.TextView
-                android:gravity="center"
-                android:layout_width="@dimen/table_width"
-                android:layout_height="wrap_content"
-                android:textColor="@color/greytexthead"
-                android:text="Honourable Chair, (Country Name) has a point of personal privilege, we cannot hear the speaker, the room is too hot, etc…"
-                android:textSize="20sp"
-                android:background="#E3C5BB"
-                android:layout_margin="8dp"
-                app:typeface="fonts/Gotham-Book.ttf"/>
+                    <com.yogesh.wordzapp.utils.TextView
+                        android:layout_width="@dimen/table_width"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:background="#FFADC6"
+                        android:gravity="center"
+                        android:text="Delegate wishes to tell the chair about of a physical discomfort the delegate is experience (the inability to hear another delegate’s speech, that the room is too hot, etc.)."
+                        android:textColor="@color/greytexthead"
+                        android:textSize="20sp"
+                        app:typeface="fonts/Gotham-Book.ttf" />
 
-        </LinearLayout>
-        </HorizontalScrollView>
+                    <com.yogesh.wordzapp.utils.TextView
+                        android:layout_width="@dimen/table_width"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:background="#E3C5BB"
+                        android:gravity="center"
+                        android:text="Honourable Chair, (Country Name) has a point of personal privilege, we cannot hear the speaker, the room is too hot, etc…"
+                        android:textColor="@color/greytexthead"
+                        android:textSize="20sp"
+                        app:typeface="fonts/Gotham-Book.ttf" />
+
+                </LinearLayout>
+            </HorizontalScrollView>
 
 
-        <HorizontalScrollView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:scrollbarAlwaysDrawHorizontalTrack="true"
-            android:scrollbars="none">
-        <LinearLayout
-            android:layout_marginLeft="3dp"
-            android:layout_marginRight="3dp"
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/abc_popup_background_mtrl_mult">
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:scrollbarAlwaysDrawHorizontalTrack="true"
+                android:scrollbars="none">
 
-            <com.yogesh.wordzapp.utils.TextView
-                android:gravity="center"
-                android:layout_width="@dimen/table_width"
-                android:layout_height="wrap_content"
-                android:textColor="@color/greytexthead"
-                android:text="Delegate wishes to suspend debate in order for a moderated or un-moderated caucus. The purpose and the length of the suspension need to be stated."
-                android:textSize="20sp"
-                android:background="#FFADC6"
-                android:layout_margin="8dp"
-                app:typeface="fonts/Gotham-Book.ttf"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:background="@drawable/abc_popup_background_mtrl_mult"
+                    android:orientation="horizontal">
 
-            <com.yogesh.wordzapp.utils.TextView
-                android:gravity="center"
-                android:layout_width="@dimen/table_width"
-                android:layout_height="wrap_content"
-                android:textColor="@color/greytexthead"
-                android:text="Honourable Chair, (Country Name) moves to suspend the meeting for the purpose of a moderated/ caucus to discuss landmines for 25 minutes, with a 1 minute speaking time.
+                    <com.yogesh.wordzapp.utils.TextView
+                        android:layout_width="@dimen/table_width"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:background="#FFADC6"
+                        android:gravity="center"
+                        android:text="Delegate wishes to suspend debate in order for a moderated or un-moderated caucus. The purpose and the length of the suspension need to be stated."
+                        android:textColor="@color/greytexthead"
+                        android:textSize="20sp"
+                        app:typeface="fonts/Gotham-Book.ttf" />
+
+                    <com.yogesh.wordzapp.utils.TextView
+                        android:layout_width="@dimen/table_width"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:background="#E3C5BB"
+                        android:gravity="center"
+                        android:text="Honourable Chair, (Country Name) moves to suspend the meeting for the purpose of a moderated/ caucus to discuss landmines for 25 minutes, with a 1 minute speaking time.
 OR
 Honourable Chair, (Country Name) moves to suspend the meeting for an un-moderated caucus for 20 minutes."
-                android:textSize="20sp"
-                android:background="#E3C5BB"
-                android:layout_margin="8dp"
-                app:typeface="fonts/Gotham-Book.ttf"/>
+                        android:textColor="@color/greytexthead"
+                        android:textSize="20sp"
+                        app:typeface="fonts/Gotham-Book.ttf" />
 
-        </LinearLayout>
-        </HorizontalScrollView>
+                </LinearLayout>
+            </HorizontalScrollView>
 
-        <HorizontalScrollView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:scrollbarAlwaysDrawHorizontalTrack="true"
-            android:scrollbars="none">
-        <LinearLayout
-            android:layout_marginLeft="3dp"
-            android:layout_marginRight="3dp"
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/abc_popup_background_mtrl_mult">
-
-            <com.yogesh.wordzapp.utils.TextView
-                android:gravity="center"
-                android:layout_width="@dimen/table_width"
-                android:layout_height="wrap_content"
-                android:textColor="@color/greytexthead"
-                android:text="Delegate wishes to end the debate on the topic. This topic can be returned to at a later time. Before going to a vote, two delegates must speak in favour of tabling the debate and two must speak against it."
-                android:textSize="20sp"
-                android:background="#FFADC6"
-                android:layout_margin="8dp"
-                app:typeface="fonts/Gotham-Book.ttf"/>
-
-            <com.yogesh.wordzapp.utils.TextView
-                android:gravity="center"
-                android:layout_width="@dimen/table_width"
-                android:layout_height="wrap_content"
-                android:textColor="@color/greytexthead"
-                android:text="Honourable Chair, (Country Name) moves to table the topic of landmines to be discussed at a later time. "
-                android:textSize="20sp"
-                android:background="#E3C5BB"
-                android:layout_margin="8dp"
-                app:typeface="fonts/Gotham-Book.ttf"/>
-
-        </LinearLayout>
-        </HorizontalScrollView>
-
-        <HorizontalScrollView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:scrollbarAlwaysDrawHorizontalTrack="true"
-            android:scrollbars="none">
-        <LinearLayout
-            android:layout_marginLeft="3dp"
-            android:layout_marginRight="3dp"
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/abc_popup_background_mtrl_mult">
-
-            <com.yogesh.wordzapp.utils.TextView
-                android:gravity="center"
-                android:layout_width="@dimen/table_width"
-                android:layout_height="wrap_content"
-                android:textColor="@color/greytexthead"
-                android:text="A delegate has just finished their speech. Another delegate would like to ask them a question about speech. (Please note, that a speaker must be open to questions.)"
-                android:textSize="20sp"
-                android:background="#FFADC6"
-                android:layout_margin="8dp"
-                app:typeface="fonts/Gotham-Book.ttf"/>
-
-            <com.yogesh.wordzapp.utils.TextView
-                android:gravity="center"
-                android:layout_width="@dimen/table_width"
-                android:layout_height="wrap_content"
-                android:textColor="@color/greytexthead"
-                android:text="Honourable Chair, (Country Name) has a point of information for the delegate."
-                android:textSize="20sp"
-                android:background="#E3C5BB"
-                android:layout_margin="8dp"
-                app:typeface="fonts/Gotham-Book.ttf"/>
-
-        </LinearLayout>
-        </HorizontalScrollView>
-
-        <HorizontalScrollView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:scrollbarAlwaysDrawHorizontalTrack="true"
-            android:scrollbars="none">
-        <LinearLayout
-            android:layout_marginLeft="3dp"
-            android:layout_marginRight="3dp"
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/abc_popup_background_mtrl_mult">
-
-            <com.yogesh.wordzapp.utils.TextView
-                android:gravity="center"
-                android:layout_width="@dimen/table_width"
-                android:layout_height="wrap_content"
-                android:textColor="@color/greytexthead"
-                android:text="The delegate feels that the chairperson has made an incorrect decision. The appeal must first be made in writing."
-                android:textSize="20sp"
-                android:background="#FFADC6"
-                android:layout_margin="8dp"
-                app:typeface="fonts/Gotham-Book.ttf"/>
-
-            <com.yogesh.wordzapp.utils.TextView
-                android:gravity="center"
-                android:layout_width="@dimen/table_width"
-                android:layout_height="wrap_content"
-                android:textColor="@color/greytexthead"
-                android:text="Honourable Chair, (Country Name) moves for an Appeal of the Chair (after a note has been accepted)."
-                android:textSize="20sp"
-                android:background="#E3C5BB"
-                android:layout_margin="8dp"
-                app:typeface="fonts/Gotham-Book.ttf"/>
-
-        </LinearLayout>
-        </HorizontalScrollView>
-
-        <HorizontalScrollView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:scrollbarAlwaysDrawHorizontalTrack="true"
-            android:scrollbars="none">
-        <LinearLayout
-            android:layout_marginLeft="3dp"
-            android:layout_marginRight="3dp"
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/abc_popup_background_mtrl_mult">
-
-            <com.yogesh.wordzapp.utils.TextView
-                android:gravity="center"
-                android:layout_width="@dimen/table_width"
-                android:layout_height="wrap_content"
-                android:textColor="@color/greytexthead"
-                android:text="Delegate wishes to close the debate and move to voting."
-                android:textSize="20sp"
-                android:background="#FFADC6"
-                android:layout_margin="8dp"
-                app:typeface="fonts/Gotham-Book.ttf"/>
-
-            <com.yogesh.wordzapp.utils.TextView
-                android:gravity="center"
-                android:layout_width="@dimen/table_width"
-                android:layout_height="wrap_content"
-                android:textColor="@color/greytexthead"
-                android:text="Honourable Chair, (Country Name) moves for Closure of Debate on this topic."
-                android:textSize="20sp"
-                android:background="#E3C5BB"
-                android:layout_margin="8dp"
-                app:typeface="fonts/Gotham-Book.ttf"/>
-
-        </LinearLayout>
-        </HorizontalScrollView>
-
-        <LinearLayout
-            android:layout_marginLeft="3dp"
-            android:layout_marginRight="3dp"
-            android:layout_marginTop="15dp"
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <com.yogesh.wordzapp.utils.TextView
+            <HorizontalScrollView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="@color/greytexthead"
-                android:text="PAGE 76\n
-THE 2006 UNA-USAMODEL UNITED NATIONS CONFERENCE ADVISORS GUIDE"
-                android:textSize="12sp"
-                android:layout_marginTop="28dp"
-                app:typeface="fonts/Gotham-Light.ttf"/>
+                android:layout_height="match_parent"
+                android:scrollbarAlwaysDrawHorizontalTrack="true"
+                android:scrollbars="none">
 
-            
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:background="@drawable/abc_popup_background_mtrl_mult"
+                    android:orientation="horizontal">
+
+                    <com.yogesh.wordzapp.utils.TextView
+                        android:layout_width="@dimen/table_width"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:background="#FFADC6"
+                        android:gravity="center"
+                        android:text="Delegate wishes to end the debate on the topic. This topic can be returned to at a later time. Before going to a vote, two delegates must speak in favour of tabling the debate and two must speak against it."
+                        android:textColor="@color/greytexthead"
+                        android:textSize="20sp"
+                        app:typeface="fonts/Gotham-Book.ttf" />
+
+                    <com.yogesh.wordzapp.utils.TextView
+                        android:layout_width="@dimen/table_width"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:background="#E3C5BB"
+                        android:gravity="center"
+                        android:text="Honourable Chair, (Country Name) moves to table the topic of landmines to be discussed at a later time. "
+                        android:textColor="@color/greytexthead"
+                        android:textSize="20sp"
+                        app:typeface="fonts/Gotham-Book.ttf" />
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:scrollbarAlwaysDrawHorizontalTrack="true"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:background="@drawable/abc_popup_background_mtrl_mult"
+                    android:orientation="horizontal">
+
+                    <com.yogesh.wordzapp.utils.TextView
+                        android:layout_width="@dimen/table_width"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:background="#FFADC6"
+                        android:gravity="center"
+                        android:text="A delegate has just finished their speech. Another delegate would like to ask them a question about speech. (Please note, that a speaker must be open to questions.)"
+                        android:textColor="@color/greytexthead"
+                        android:textSize="20sp"
+                        app:typeface="fonts/Gotham-Book.ttf" />
+
+                    <com.yogesh.wordzapp.utils.TextView
+                        android:layout_width="@dimen/table_width"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:background="#E3C5BB"
+                        android:gravity="center"
+                        android:text="Honourable Chair, (Country Name) has a point of information for the delegate."
+                        android:textColor="@color/greytexthead"
+                        android:textSize="20sp"
+                        app:typeface="fonts/Gotham-Book.ttf" />
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:scrollbarAlwaysDrawHorizontalTrack="true"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:background="@drawable/abc_popup_background_mtrl_mult"
+                    android:orientation="horizontal">
+
+                    <com.yogesh.wordzapp.utils.TextView
+                        android:layout_width="@dimen/table_width"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:background="#FFADC6"
+                        android:gravity="center"
+                        android:text="The delegate feels that the chairperson has made an incorrect decision. The appeal must first be made in writing."
+                        android:textColor="@color/greytexthead"
+                        android:textSize="20sp"
+                        app:typeface="fonts/Gotham-Book.ttf" />
+
+                    <com.yogesh.wordzapp.utils.TextView
+                        android:layout_width="@dimen/table_width"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:background="#E3C5BB"
+                        android:gravity="center"
+                        android:text="Honourable Chair, (Country Name) moves for an Appeal of the Chair (after a note has been accepted)."
+                        android:textColor="@color/greytexthead"
+                        android:textSize="20sp"
+                        app:typeface="fonts/Gotham-Book.ttf" />
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:scrollbarAlwaysDrawHorizontalTrack="true"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:background="@drawable/abc_popup_background_mtrl_mult"
+                    android:orientation="horizontal">
+
+                    <com.yogesh.wordzapp.utils.TextView
+                        android:layout_width="@dimen/table_width"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:background="#FFADC6"
+                        android:gravity="center"
+                        android:text="Delegate wishes to close the debate and move to voting."
+                        android:textColor="@color/greytexthead"
+                        android:textSize="20sp"
+                        app:typeface="fonts/Gotham-Book.ttf" />
+
+                    <com.yogesh.wordzapp.utils.TextView
+                        android:layout_width="@dimen/table_width"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:background="#E3C5BB"
+                        android:gravity="center"
+                        android:text="Honourable Chair, (Country Name) moves for Closure of Debate on this topic."
+                        android:textColor="@color/greytexthead"
+                        android:textSize="20sp"
+                        app:typeface="fonts/Gotham-Book.ttf" />
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <com.yogesh.wordzapp.utils.TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="28dp"
+                    android:text="PAGE 76\n
+THE 2006 UNA-USAMODEL UNITED NATIONS CONFERENCE ADVISORS GUIDE"
+                    android:textColor="@color/greytexthead"
+                    android:textSize="12sp"
+                    app:typeface="fonts/Gotham-Light.ttf" />
+
+
+            </LinearLayout>
         </LinearLayout>
-    </LinearLayout>
     </ScrollView>
 
 

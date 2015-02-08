@@ -5,9 +5,9 @@
     android:background="@color/white">
 
     <FrameLayout
-        android:clipChildren="false"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:clipChildren="false">
 
         <!-- Image Layout -->
         <FrameLayout
@@ -19,10 +19,10 @@
                 android:id="@+id/image_view"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:src="@drawable/back"
                 android:adjustViewBounds="true"
+                android:contentDescription="@string/app_name"
                 android:scaleType="centerCrop"
-                android:contentDescription="@string/app_name" />
+                android:src="@drawable/back" />
 
         </FrameLayout>
 
@@ -31,8 +31,8 @@
             android:id="@+id/content_linear_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:background="@color/white">
+            android:background="@color/white"
+            android:orientation="vertical">
 
             <ScrollView
                 android:layout_width="match_parent"
@@ -40,40 +40,39 @@
                 android:layout_below="@+id/toolbar">
 
                 <LinearLayout
-                    android:orientation="vertical"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/toolbar"
-                    android:layoutAnimation="@anim/layout_controller_color">
+                    android:layoutAnimation="@anim/layout_controller_color"
+                    android:orientation="vertical">
 
                     <FrameLayout
                         android:id="@+id/f1"
                         android:layout_width="match_parent"
                         android:layout_height="200dp"
-                        android:layout_margin="4dp"
                         android:layout_below="@+id/toolbar"
+                        android:layout_margin="4dp"
                         android:background="@color/trans_green"
-                        android:onClick="ShowBasic"
-                        >
+                        android:onClick="ShowBasic">
 
                         <ImageButton
+                            android:id="@+id/basics"
                             android:layout_width="200dp"
                             android:layout_height="200dp"
                             android:layout_gravity="bottom|center_horizontal"
-                            android:scaleType="center"
                             android:background="@drawable/debate"
-                            android:id="@+id/basics"
-                            android:onClick="ShowBasic"/>
+                            android:onClick="ShowBasic"
+                            android:scaleType="center" />
 
                         <com.yogesh.wordzapp.utils.WordzTextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Wordz Basics"
                             android:layout_gravity="bottom|left"
                             android:fontFamily="sans-serif-condensed"
+                            android:padding="10dp"
+                            android:text="Wordz Basics"
                             android:textColor="@android:color/white"
-                            android:textSize="25sp"
-                            android:padding="10dp"/>
+                            android:textSize="25sp" />
 
                     </FrameLayout>
 
@@ -81,32 +80,31 @@
                         android:id="@+id/f2"
                         android:layout_width="match_parent"
                         android:layout_height="200dp"
+                        android:layout_below="@+id/f1"
                         android:layout_marginBottom="5dp"
                         android:layout_marginLeft="5dp"
                         android:layout_marginRight="5dp"
-                        android:layout_below="@+id/f1"
                         android:background="@color/trans_greyblue"
-                        android:onClick="ShowSchedule"
-                        >
+                        android:onClick="ShowSchedule">
 
                         <ImageButton
+                            android:id="@+id/calender"
                             android:layout_width="200dp"
                             android:layout_height="200dp"
                             android:layout_gravity="bottom|center_horizontal"
-                            android:scaleType="fitCenter"
                             android:background="@drawable/clock_dark"
-                            android:id="@+id/calender"
-                            android:onClick="ShowSchedule"/>
+                            android:onClick="ShowSchedule"
+                            android:scaleType="fitCenter" />
 
                         <com.yogesh.wordzapp.utils.WordzTextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Wordz Schedule"
                             android:layout_gravity="bottom|left"
                             android:fontFamily="sans-serif-condensed"
+                            android:padding="10dp"
+                            android:text="Wordz Schedule"
                             android:textColor="@android:color/white"
-                            android:textSize="25sp"
-                            android:padding="10dp"/>
+                            android:textSize="25sp" />
 
                     </FrameLayout>
 
@@ -114,32 +112,31 @@
                         android:id="@+id/f3"
                         android:layout_width="match_parent"
                         android:layout_height="200dp"
+                        android:layout_below="@+id/f2"
                         android:layout_marginBottom="5dp"
                         android:layout_marginLeft="5dp"
                         android:layout_marginRight="5dp"
-                        android:layout_below="@+id/f2"
                         android:background="@color/trans_violet"
-                        android:onClick="ShowSupport"
-                        >
+                        android:onClick="ShowSupport">
 
                         <ImageButton
+                            android:id="@+id/support"
                             android:layout_width="200dp"
                             android:layout_height="200dp"
                             android:layout_gravity="bottom|center_horizontal"
-                            android:scaleType="center"
                             android:background="@drawable/ic_support"
-                            android:id="@+id/support"
-                            android:onClick="ShowSupport"/>
+                            android:onClick="ShowSupport"
+                            android:scaleType="center" />
 
                         <com.yogesh.wordzapp.utils.WordzTextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Wordz Support"
                             android:layout_gravity="bottom|left"
                             android:fontFamily="sans-serif-condensed"
+                            android:padding="10dp"
+                            android:text="Wordz Support"
                             android:textColor="@android:color/white"
-                            android:textSize="25sp"
-                            android:padding="10dp"/>
+                            android:textSize="25sp" />
 
                     </FrameLayout>
                 </LinearLayout>
@@ -152,18 +149,17 @@
             android:id="@+id/toolbar_linear_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
+            android:background="@color/colorPrimary"
             android:clipChildren="false"
             android:clipToPadding="false"
-            android:background="@color/colorPrimary">
+            android:orientation="vertical">
 
-            <android.support.v7.widget.Toolbar
-                xmlns:app="http://schemas.android.com/apk/res-auto"
+            <android.support.v7.widget.Toolbar xmlns:app="http://schemas.android.com/apk/res-auto"
                 android:id="@+id/toolbar"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
                 android:background="?attr/colorPrimary"
-                app:theme="@style/myCustomTheme"/>
+                app:theme="@style/myCustomTheme" />
 
         </LinearLayout>
 

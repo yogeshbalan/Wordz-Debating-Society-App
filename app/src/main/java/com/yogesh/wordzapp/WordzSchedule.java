@@ -1,13 +1,11 @@
 package com.yogesh.wordzapp;
 
-import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 
 
 public class WordzSchedule extends ActionBarActivity {
@@ -33,17 +31,6 @@ public class WordzSchedule extends ActionBarActivity {
         getSupportActionBar().setHomeButtonEnabled(true);
         
         
-    }
-
-
-    public void CALENDER(final View view){
-        Intent intent = new Intent(this, MUNCalender.class);
-        startActivity(intent);
-    }
-
-    public void MUNLIST(final View view){
-        Intent intent = new Intent(this, MUNList.class);
-        startActivity(intent);
     }
     
     @Override

@@ -1,178 +1,169 @@
-<RelativeLayout
-    android:id="@+id/scrollview_un"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollview_un"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.yogesh.wordzapp.WordzBasic">
 
-    <android.support.v7.widget.Toolbar
-        xmlns:app="http://schemas.android.com/apk/res-auto"
+    <android.support.v7.widget.Toolbar xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:background="?attr/colorPrimary"
-        app:theme="@style/myCustomTheme"/>
+        app:theme="@style/myCustomTheme" />
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/toolbar">
-    
-    <LinearLayout
-        android:id="@+id/wordzbasic"
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/toolbar">
-        
-        
 
-        <FrameLayout
-            android:id="@+id/f1"
+        <LinearLayout
+            android:id="@+id/wordzbasic"
             android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:layout_below="@+id/f1"
-            android:background="@color/pro_one"
-            android:onClick="ModelUN"
-            >
-            
-            <com.yogesh.wordzapp.utils.TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Basic MODEL UN Procedures"
-                android:layout_gravity="center_vertical|left"
-                app:typeface="fonts/Gotham-BoldItalic.ttf"
-                android:textColor="@android:color/white"
-                android:textSize="25sp"
-                android:padding="10dp"
-                android:clickable="true"
-                android:onClick="ModelUN"/>
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbar"
+            android:orientation="vertical">
 
-        </FrameLayout>
 
-        <FrameLayout
-            android:id="@+id/f2"
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
+            <FrameLayout
+                android:id="@+id/f1"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@+id/f1"
+                android:background="@color/pro_one"
+                android:onClick="ModelUN">
 
-            android:layout_below="@+id/f1"
-            android:background="@color/pro_two"
-            android:onClick="MUNvocab"
-            >
+                <com.yogesh.wordzapp.utils.TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|left"
+                    android:clickable="true"
+                    android:onClick="ModelUN"
+                    android:padding="10dp"
+                    android:text="Basic MODEL UN Procedures"
+                    android:textColor="@android:color/white"
+                    android:textSize="25sp"
+                    app:typeface="fonts/Gotham-BoldItalic.ttf" />
 
-            <com.yogesh.wordzapp.utils.TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="MUN Vocab"
-                android:layout_gravity="center_vertical|left"
-                app:typeface="fonts/Gotham-BoldItalic.ttf"
-                android:textColor="@android:color/white"
-                android:textSize="25sp"
-                android:padding="10dp"
-                android:clickable="true"
-                android:onClick="MUNvocab"/>
+            </FrameLayout>
 
-        </FrameLayout>
+            <FrameLayout
+                android:id="@+id/f2"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
 
-        <FrameLayout
-            android:id="@+id/f3"
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
+                android:layout_below="@+id/f1"
+                android:background="@color/pro_two"
+                android:onClick="MUNvocab">
 
-            android:layout_below="@+id/f2"
-            android:background="@color/pro_three"
-            android:onClick="PointsAndMotionList"
-            >
+                <com.yogesh.wordzapp.utils.TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|left"
+                    android:clickable="true"
+                    android:onClick="MUNvocab"
+                    android:padding="10dp"
+                    android:text="MUN Vocab"
+                    android:textColor="@android:color/white"
+                    android:textSize="25sp"
+                    app:typeface="fonts/Gotham-BoldItalic.ttf" />
 
-            <com.yogesh.wordzapp.utils.TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Points and Motion - List"
-                android:layout_gravity="center_vertical|left"
-                app:typeface="fonts/Gotham-BoldItalic.ttf"
-                android:textColor="@android:color/white"
-                android:textSize="25sp"
-                android:padding="10dp"
-                android:clickable="true"
-                android:onClick="PointsAndMotionList"/>
+            </FrameLayout>
 
-        </FrameLayout>
+            <FrameLayout
+                android:id="@+id/f3"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
 
-        <FrameLayout
-            android:id="@+id/f4"
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
+                android:layout_below="@+id/f2"
+                android:background="@color/pro_three"
+                android:onClick="PointsAndMotionList">
 
-            android:layout_below="@+id/f3"
-            android:background="@color/pro_four"
-            android:onClick="PointsAndMotionUsage"
-            >
+                <com.yogesh.wordzapp.utils.TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|left"
+                    android:clickable="true"
+                    android:onClick="PointsAndMotionList"
+                    android:padding="10dp"
+                    android:text="Points and Motion - List"
+                    android:textColor="@android:color/white"
+                    android:textSize="25sp"
+                    app:typeface="fonts/Gotham-BoldItalic.ttf" />
 
-            <com.yogesh.wordzapp.utils.TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Points and Motion - Usage"
-                android:layout_gravity="center_vertical|left"
-                app:typeface="fonts/Gotham-BoldItalic.ttf"
-                android:textColor="@android:color/white"
-                android:textSize="25sp"
-                android:padding="10dp"
-                android:clickable="true"
-                android:onClick="PointsAndMotionUsage"/>
+            </FrameLayout>
 
-        </FrameLayout>
+            <FrameLayout
+                android:id="@+id/f4"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
 
-        <FrameLayout
-            android:id="@+id/f5"
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
+                android:layout_below="@+id/f3"
+                android:background="@color/pro_four"
+                android:onClick="PointsAndMotionUsage">
 
-            android:layout_below="@+id/f4"
-            android:background="@color/pro_five"
-            android:onClick="Resolutions"
-            >
+                <com.yogesh.wordzapp.utils.TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|left"
+                    android:clickable="true"
+                    android:onClick="PointsAndMotionUsage"
+                    android:padding="10dp"
+                    android:text="Points and Motion - Usage"
+                    android:textColor="@android:color/white"
+                    android:textSize="25sp"
+                    app:typeface="fonts/Gotham-BoldItalic.ttf" />
 
-            <com.yogesh.wordzapp.utils.TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Resolution"
-                android:layout_gravity="center_vertical|left"
-                app:typeface="fonts/Gotham-BoldItalic.ttf"
-                android:textColor="@android:color/white"
-                android:textSize="25sp"
-                android:padding="10dp"
-                android:clickable="true"
-                android:onClick="Resolutions"/>
+            </FrameLayout>
 
-        </FrameLayout>
+            <FrameLayout
+                android:id="@+id/f5"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
 
-        <FrameLayout
-            android:id="@+id/f6"
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:layout_below="@+id/f4"
-            android:background="@color/pro_six"
-            android:onClick="SampleResolutions"
-            >
+                android:layout_below="@+id/f4"
+                android:background="@color/pro_five"
+                android:onClick="Resolutions">
 
-            <com.yogesh.wordzapp.utils.TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Sample Resolution"
-                android:layout_gravity="center_vertical|left"
-                app:typeface="fonts/Gotham-BoldItalic.ttf"
-                android:textColor="@android:color/white"
-                android:textSize="25sp"
-                android:padding="10dp"
-                android:onClick="SampleResolutions"
-                android:clickable="true"/>
+                <com.yogesh.wordzapp.utils.TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|left"
+                    android:clickable="true"
+                    android:onClick="Resolutions"
+                    android:padding="10dp"
+                    android:text="Resolution"
+                    android:textColor="@android:color/white"
+                    android:textSize="25sp"
+                    app:typeface="fonts/Gotham-BoldItalic.ttf" />
 
-        </FrameLayout>
-     
+            </FrameLayout>
 
-    </LinearLayout>
+            <FrameLayout
+                android:id="@+id/f6"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@+id/f4"
+                android:background="@color/pro_six"
+                android:onClick="SampleResolutions">
+
+                <com.yogesh.wordzapp.utils.TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|left"
+                    android:clickable="true"
+                    android:onClick="SampleResolutions"
+                    android:padding="10dp"
+                    android:text="Sample Resolution"
+                    android:textColor="@android:color/white"
+                    android:textSize="25sp"
+                    app:typeface="fonts/Gotham-BoldItalic.ttf" />
+
+            </FrameLayout>
+
+
+        </LinearLayout>
     </ScrollView>
 
 </RelativeLayout>
