@@ -1,4 +1,5 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -19,21 +20,75 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:background="@drawable/abc_menu_hardkey_panel_mtrl_mult">
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-            <com.yogesh.wordzapp.utils.WordzTextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/toolbar"
-                android:layout_gravity="bottom|left"
-                android:fontFamily="sans-serif-condensed"
-                android:padding="10dp"
-                android:text="@string/aboutWordz"
-                android:textColor="@color/colorPrimaryDark"
-                android:textSize="25sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/abc_menu_hardkey_panel_mtrl_mult"
+                android:orientation="vertical">
+
+                <com.yogesh.wordzapp.utils.WordzTextView
+                    android:id="@+id/top_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|left"
+                    android:fontFamily="sans-serif-condensed"
+                    android:padding="10dp"
+                    android:text="@string/aboutWordz"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/text_heading"
+                    app:typeface="fonts/Gotham-Book.ttf" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/md_indigo_200"
+                    android:elevation="10dp"
+                    android:onClick="makeAPhoneCall"
+                    android:orientation="vertical">
+
+                    <com.yogesh.wordzapp.utils.TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|left"
+                        android:padding="8dp"
+                        android:text="@string/contacts"
+                        android:textColor="@color/trans_grey"
+                        android:textSize="17sp"
+                        app:typeface="fonts/Gotham-Book.ttf" />
+
+                    <com.yogesh.wordzapp.utils.TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|left"
+                        android:layout_marginLeft="4dp"
+                        android:padding="6dp"
+                        android:text="• Director-Sakshi Aggarwal"
+                        android:textColor="@color/trans_grey"
+                        android:textSize="14sp"
+                        app:typeface="fonts/Gotham-MediumItalic.ttf" />
+
+                    <com.yogesh.wordzapp.utils.TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|left"
+                        android:layout_marginLeft="4dp"
+                        android:padding="6dp"
+                        android:text="  +919818548532"
+                        android:textColor="@color/trans_grey"
+                        android:textSize="14sp"
+                        app:typeface="fonts/Gotham-Medium.ttf" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
         </LinearLayout>
+
     </ScrollView>
 
 </RelativeLayout>

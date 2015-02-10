@@ -64,7 +64,7 @@
                     android:clickable="true"
                     android:onClick="MUNvocab"
                     android:padding="10dp"
-                    android:text="MUN Vocab"
+                    android:text="Model UN Vocabulary"
                     android:textColor="@android:color/white"
                     android:textSize="25sp"
                     app:typeface="fonts/Gotham-BoldItalic.ttf" />
@@ -121,7 +121,6 @@
                 android:id="@+id/f5"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
-
                 android:layout_below="@+id/f4"
                 android:background="@color/pro_five"
                 android:onClick="Resolutions">
@@ -133,7 +132,7 @@
                     android:clickable="true"
                     android:onClick="Resolutions"
                     android:padding="10dp"
-                    android:text="Resolution"
+                    android:text="Resolutions"
                     android:textColor="@android:color/white"
                     android:textSize="25sp"
                     app:typeface="fonts/Gotham-BoldItalic.ttf" />

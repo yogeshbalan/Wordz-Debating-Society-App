@@ -19,4 +19,7 @@
     <dimen name="table_width">200dp</dimen>
     <dimen name="table_width_small">150dp</dimen>
     
+    <dimen name="text_heading">20sp</dimen>
+    <dimen name="text_content">17sp</dimen>
+    
 </resources>

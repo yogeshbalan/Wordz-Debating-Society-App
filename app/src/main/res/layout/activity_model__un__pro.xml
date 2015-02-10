@@ -48,8 +48,8 @@
                     android:layout_height="wrap_content"
                     android:text="@string/model_formal_debate_head"
                     android:textColor="@color/greytexthead"
-                    android:textSize="25sp"
-                    app:typeface="fonts/Gotham-BookItalic.ttf" />
+                    android:textSize="@dimen/text_heading"
+                    app:typeface="fonts/Gotham-BlackItalic.ttf" />
 
                 <com.yogesh.wordzapp.utils.TextView
                     android:layout_width="match_parent"
@@ -57,7 +57,7 @@
                     android:layout_marginTop="8dp"
                     android:text="@string/model_formal_debate_maini"
                     android:textColor="@color/greytextdetail"
-                    android:textSize="20sp"
+                    android:textSize="@dimen/text_content"
                     app:typeface="fonts/Gotham-Book.ttf" />
             </LinearLayout>
 
@@ -76,8 +76,8 @@
                     android:layout_height="wrap_content"
                     android:text="@string/POI_head"
                     android:textColor="@color/greytexthead"
-                    android:textSize="25sp"
-                    app:typeface="fonts/Gotham-BookItalic.ttf" />
+                    android:textSize="@dimen/text_heading"
+                    app:typeface="fonts/Gotham-BlackItalic.ttf" />
 
                 <com.yogesh.wordzapp.utils.TextView
                     android:layout_width="match_parent"
@@ -85,7 +85,7 @@
                     android:layout_marginTop="8dp"
                     android:text="@string/POI_main"
                     android:textColor="@color/greytextdetail"
-                    android:textSize="20sp"
+                    android:textSize="@dimen/text_content"
                     app:typeface="fonts/Gotham-Book.ttf" />
             </LinearLayout>
 
@@ -104,8 +104,8 @@
                     android:layout_height="wrap_content"
                     android:text="@string/MOCOD_head"
                     android:textColor="@color/greytexthead"
-                    android:textSize="25sp"
-                    app:typeface="fonts/Gotham-BookItalic.ttf" />
+                    android:textSize="@dimen/text_heading"
+                    app:typeface="fonts/Gotham-BlackItalic.ttf" />
 
                 <com.yogesh.wordzapp.utils.TextView
                     android:layout_width="match_parent"
@@ -113,7 +113,7 @@
                     android:layout_marginTop="8dp"
                     android:text="@string/MOCOD_main"
                     android:textColor="@color/greytextdetail"
-                    android:textSize="20sp"
+                    android:textSize="@dimen/text_content"
                     app:typeface="fonts/Gotham-Book.ttf" />
             </LinearLayout>
 
@@ -132,8 +132,8 @@
                     android:layout_height="wrap_content"
                     android:text="@string/MOSD_head"
                     android:textColor="@color/greytexthead"
-                    android:textSize="25sp"
-                    app:typeface="fonts/Gotham-BookItalic.ttf" />
+                    android:textSize="@dimen/text_heading"
+                    app:typeface="fonts/Gotham-BlackItalic.ttf" />
 
                 <com.yogesh.wordzapp.utils.TextView
                     android:layout_width="match_parent"
@@ -141,7 +141,7 @@
                     android:layout_marginTop="8dp"
                     android:text="@string/MOSD_main"
                     android:textColor="@color/greytextdetail"
-                    android:textSize="20sp"
+                    android:textSize="@dimen/text_content"
                     app:typeface="fonts/Gotham-Book.ttf" />
             </LinearLayout>
 
@@ -160,8 +160,8 @@
                     android:layout_height="wrap_content"
                     android:text="@string/POIN_head"
                     android:textColor="@color/greytexthead"
-                    android:textSize="25sp"
-                    app:typeface="fonts/Gotham-BookItalic.ttf" />
+                    android:textSize="@dimen/text_heading"
+                    app:typeface="fonts/Gotham-BlackItalic.ttf" />
 
                 <com.yogesh.wordzapp.utils.TextView
                     android:layout_width="match_parent"
@@ -169,7 +169,7 @@
                     android:layout_marginTop="8dp"
                     android:text="@string/POIN_main"
                     android:textColor="@color/greytextdetail"
-                    android:textSize="20sp"
+                    android:textSize="@dimen/text_content"
                     app:typeface="fonts/Gotham-Book.ttf" />
             </LinearLayout>
 
@@ -188,8 +188,8 @@
                     android:layout_height="wrap_content"
                     android:text="@string/MTSST_head"
                     android:textColor="@color/greytexthead"
-                    android:textSize="25sp"
-                    app:typeface="fonts/Gotham-BookItalic.ttf" />
+                    android:textSize="@dimen/text_heading"
+                    app:typeface="fonts/Gotham-BlackItalic.ttf" />
 
                 <com.yogesh.wordzapp.utils.TextView
                     android:layout_width="match_parent"
@@ -197,7 +197,7 @@
                     android:layout_marginTop="8dp"
                     android:text="@string/MTSST_main"
                     android:textColor="@color/greytextdetail"
-                    android:textSize="20sp"
+                    android:textSize="@dimen/text_content"
                     app:typeface="fonts/Gotham-Book.ttf" />
             </LinearLayout>
 
@@ -216,8 +216,8 @@
                     android:layout_height="wrap_content"
                     android:text="@string/MTAM_head"
                     android:textColor="@color/greytexthead"
-                    android:textSize="25sp"
-                    app:typeface="fonts/Gotham-BookItalic.ttf" />
+                    android:textSize="@dimen/text_heading"
+                    app:typeface="fonts/Gotham-BlackItalic.ttf" />
 
                 <com.yogesh.wordzapp.utils.TextView
                     android:layout_width="match_parent"
@@ -225,7 +225,7 @@
                     android:layout_marginTop="8dp"
                     android:text="@string/MTAM_main"
                     android:textColor="@color/greytextdetail"
-                    android:textSize="20sp"
+                    android:textSize="@dimen/text_content"
                     app:typeface="fonts/Gotham-Book.ttf" />
             </LinearLayout>
 
@@ -244,8 +244,8 @@
                     android:layout_height="wrap_content"
                     android:text="@string/MTTD_head"
                     android:textColor="@color/greytexthead"
-                    android:textSize="25sp"
-                    app:typeface="fonts/Gotham-BookItalic.ttf" />
+                    android:textSize="@dimen/text_heading"
+                    app:typeface="fonts/Gotham-BlackItalic.ttf" />
 
                 <com.yogesh.wordzapp.utils.TextView
                     android:layout_width="match_parent"
@@ -253,7 +253,7 @@
                     android:layout_marginTop="8dp"
                     android:text="@string/MTTD_main"
                     android:textColor="@color/greytextdetail"
-                    android:textSize="20sp"
+                    android:textSize="@dimen/text_content"
                     app:typeface="fonts/Gotham-Book.ttf" />
             </LinearLayout>
 
@@ -272,8 +272,8 @@
                     android:layout_height="wrap_content"
                     android:text="@string/MTMCA_head"
                     android:textColor="@color/greytexthead"
-                    android:textSize="25sp"
-                    app:typeface="fonts/Gotham-BookItalic.ttf" />
+                    android:textSize="@dimen/text_heading"
+                    app:typeface="fonts/Gotham-BlackItalic.ttf" />
 
                 <com.yogesh.wordzapp.utils.TextView
                     android:layout_width="match_parent"
@@ -281,7 +281,7 @@
                     android:layout_marginTop="8dp"
                     android:text="@string/MTMCA_main"
                     android:textColor="@color/greytextdetail"
-                    android:textSize="20sp"
+                    android:textSize="@dimen/text_content"
                     app:typeface="fonts/Gotham-Book.ttf" />
             </LinearLayout>
 
@@ -300,8 +300,8 @@
                     android:layout_height="wrap_content"
                     android:text="@string/POO_head"
                     android:textColor="@color/greytexthead"
-                    android:textSize="25sp"
-                    app:typeface="fonts/Gotham-BookItalic.ttf" />
+                    android:textSize="@dimen/text_heading"
+                    app:typeface="fonts/Gotham-BlackItalic.ttf" />
 
                 <com.yogesh.wordzapp.utils.TextView
                     android:layout_width="match_parent"
@@ -309,7 +309,7 @@
                     android:layout_marginTop="8dp"
                     android:text="@string/POO_main"
                     android:textColor="@color/greytextdetail"
-                    android:textSize="20sp"
+                    android:textSize="@dimen/text_content"
                     app:typeface="fonts/Gotham-Book.ttf" />
             </LinearLayout>
         </LinearLayout>

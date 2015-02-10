@@ -1,11 +1,14 @@
 package com.yogesh.wordzapp;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Build;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 
 public class WordzSupport extends ActionBarActivity {
@@ -31,6 +34,12 @@ public class WordzSupport extends ActionBarActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeButtonEnabled(true);
         
+    }
+
+    public void makeAPhoneCall(final View view){
+        Intent callIntent = new Intent(Intent.ACTION_CALL);
+        callIntent.setData(Uri.parse("tel:+919818548532"));
+        startActivity(callIntent);
     }
 
 

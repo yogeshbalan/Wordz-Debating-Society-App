@@ -48,106 +48,106 @@
                     android:layout_height="wrap_content"
                     android:text="MUN Vocab"
                     android:textColor="@color/greytexthead"
-                    android:textSize="25sp"
-                    app:typeface="fonts/Gotham-BookItalic.ttf" />
+                    android:textSize="@dimen/text_heading"
+                    app:typeface="fonts/Gotham-BlackItalic.ttf" />
 
                 <com.yogesh.wordzapp.utils.TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="Placard 1. A sign that identifies your country. "
+                    android:text="Placard 1. \nA sign that identifies your country. "
                     android:textColor="@color/greytextdetail"
-                    android:textSize="20sp"
+                    android:textSize="@dimen/text_content"
                     app:typeface="fonts/Gotham-Book.ttf" />
 
                 <com.yogesh.wordzapp.utils.TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="Sponsors 2. Countries that are the principal authors of Model UN resolutions. "
+                    android:text="Sponsors 2. \nCountries that are the principal authors of Model UN resolutions. "
                     android:textColor="@color/greytextdetail"
-                    android:textSize="20sp"
+                    android:textSize="@dimen/text_content"
                     app:typeface="fonts/Gotham-Book.ttf" />
 
                 <com.yogesh.wordzapp.utils.TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="Secretariat 3. Person who facilitates Model UN Debate. "
+                    android:text="Secretariat 3. \nPerson who facilitates Model UN Debate. "
                     android:textColor="@color/greytextdetail"
-                    android:textSize="20sp"
+                    android:textSize="@dimen/text_content"
                     app:typeface="fonts/Gotham-Book.ttf" />
 
                 <com.yogesh.wordzapp.utils.TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="Roll call 4. Attendance at the beginning of every Model UN session. "
+                    android:text="Roll call 4. \nAttendance at the beginning of every Model UN session. "
                     android:textColor="@color/greytextdetail"
-                    android:textSize="20sp"
+                    android:textSize="@dimen/text_content"
                     app:typeface="fonts/Gotham-Book.ttf" />
 
                 <com.yogesh.wordzapp.utils.TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="Veto 5. The vested power of the “P5” (permanent 5) countries to refuse approval of a draft resolution. "
+                    android:text="Veto 5. \nThe vested power of the “P5” (permanent 5) countries to refuse approval of a draft resolution. "
                     android:textColor="@color/greytextdetail"
-                    android:textSize="20sp"
+                    android:textSize="@dimen/text_content"
                     app:typeface="fonts/Gotham-Book.ttf" />
 
                 <com.yogesh.wordzapp.utils.TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="Signatories 6. Countries that would like to see a certain draft resolution debated. "
+                    android:text="Signatories 6. \nCountries that would like to see a certain draft resolution debated. "
                     android:textColor="@color/greytextdetail"
-                    android:textSize="20sp"
+                    android:textSize="@dimen/text_content"
                     app:typeface="fonts/Gotham-Book.ttf" />
 
                 <com.yogesh.wordzapp.utils.TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="Present and voting 7. When a delegate is present and wishes to vote. "
+                    android:text="Present and voting 7. \nWhen a delegate is present and wishes to vote. "
                     android:textColor="@color/greytextdetail"
-                    android:textSize="20sp"
+                    android:textSize="@dimen/text_content"
                     app:typeface="fonts/Gotham-Book.ttf" />
 
                 <com.yogesh.wordzapp.utils.TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="Unmoderated caucus 8. Informal meeting in which delegates discuss country positions and ideas for draft resolutions. "
+                    android:text="Unmoderated caucus 8. \nInformal meeting in which delegates discuss country positions and ideas for draft resolutions. "
                     android:textColor="@color/greytextdetail"
-                    android:textSize="20sp"
+                    android:textSize="@dimen/text_content"
                     app:typeface="fonts/Gotham-Book.ttf" />
 
                 <com.yogesh.wordzapp.utils.TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="Yield 9. To give up time, usually to questions or another delegate. "
+                    android:text="Yield 9. \nTo give up time, usually to questions or another delegate. "
                     android:textColor="@color/greytextdetail"
-                    android:textSize="20sp"
+                    android:textSize="@dimen/text_content"
                     app:typeface="fonts/Gotham-Book.ttf" />
 
                 <com.yogesh.wordzapp.utils.TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="Bloc 10. A group of nations. "
+                    android:text="Bloc 10. \nA group of nations. "
                     android:textColor="@color/greytextdetail"
-                    android:textSize="20sp"
+                    android:textSize="@dimen/text_content"
                     app:typeface="fonts/Gotham-Book.ttf" />
 
                 <com.yogesh.wordzapp.utils.TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="Delegate 11. A person authorized to act as representative for a country. "
+                    android:text="Delegate 11. \nA person authorized to act as representative for a country. "
                     android:textColor="@color/greytextdetail"
-                    android:textSize="20sp"
+                    android:textSize="@dimen/text_content"
                     app:typeface="fonts/Gotham-Book.ttf" />
 
 
@@ -155,81 +155,81 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="Quorum 12. The number of members that must be present before official business can be conducted. "
+                    android:text="Quorum 12. \nThe number of members that must be present before official business can be conducted. "
                     android:textColor="@color/greytextdetail"
-                    android:textSize="20sp"
+                    android:textSize="@dimen/text_content"
                     app:typeface="fonts/Gotham-Book.ttf" />
 
                 <com.yogesh.wordzapp.utils.TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="Position paper 13. A paper that helps delegates to organize their ideas and aid in formatting and representing a country’s policy. "
+                    android:text="Position paper 13. \nA paper that helps delegates to organize their ideas and aid in formatting and representing a country’s policy. "
                     android:textColor="@color/greytextdetail"
-                    android:textSize="20sp"
+                    android:textSize="@dimen/text_content"
                     app:typeface="fonts/Gotham-Book.ttf" />
 
                 <com.yogesh.wordzapp.utils.TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="Resolution 14. The final results of discussion, writing and negotiation, including suggestions for addressing a specific problem or issue. "
+                    android:text="Resolution 14. \nThe final results of discussion, writing and negotiation, including suggestions for addressing a specific problem or issue. "
                     android:textColor="@color/greytextdetail"
-                    android:textSize="20sp"
+                    android:textSize="@dimen/text_content"
                     app:typeface="fonts/Gotham-Book.ttf" />
 
                 <com.yogesh.wordzapp.utils.TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="United Nations 15. An international organization of nations pledged together to promote world peace and security. "
+                    android:text="United Nations 15. \nAn international organization of nations pledged together to promote world peace and security. "
                     android:textColor="@color/greytextdetail"
-                    android:textSize="20sp"
+                    android:textSize="@dimen/text_content"
                     app:typeface="fonts/Gotham-Book.ttf" />
 
                 <com.yogesh.wordzapp.utils.TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="Secretariat 16. The most senior staff of a Model UN conference. "
+                    android:text="Secretariat 16. \nThe most senior staff of a Model UN conference. "
                     android:textColor="@color/greytextdetail"
-                    android:textSize="20sp"
+                    android:textSize="@dimen/text_content"
                     app:typeface="fonts/Gotham-Book.ttf" />
 
                 <com.yogesh.wordzapp.utils.TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="Speakers List 17. A list that determines the order in which delegates will speak. "
+                    android:text="Speakers List 17. \nA list that determines the order in which delegates will speak. "
                     android:textColor="@color/greytextdetail"
-                    android:textSize="20sp"
+                    android:textSize="@dimen/text_content"
                     app:typeface="fonts/Gotham-Book.ttf" />
 
                 <com.yogesh.wordzapp.utils.TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="Debate 18.To discuss opposing reasons or to argue. "
+                    android:text="Debate 18. \nTo discuss opposing reasons or to argue. "
                     android:textColor="@color/greytextdetail"
-                    android:textSize="20sp"
+                    android:textSize="@dimen/text_content"
                     app:typeface="fonts/Gotham-Book.ttf" />
 
                 <com.yogesh.wordzapp.utils.TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="Dias 19. The group of people, usually high school or college students, in charge of a Model UN committee. It generally consists of a Chair, a Director and a Rapporteur."
+                    android:text="Dias 19. \nThe group of people, usually high school or college students, in charge of a Model UN committee. It generally consists of a Chair, a Director and a Rapporteur."
                     android:textColor="@color/greytextdetail"
-                    android:textSize="20sp"
+                    android:textSize="@dimen/text_content"
                     app:typeface="fonts/Gotham-Book.ttf" />
 
                 <com.yogesh.wordzapp.utils.TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="Gavel 20. The tool shaped like a small wooden hammer that the Chair uses to keep order."
+                    android:text="Gavel 20. \nThe tool shaped like a small wooden hammer that the Chair uses to keep order."
                     android:textColor="@color/greytextdetail"
-                    android:textSize="20sp"
+                    android:textSize="@dimen/text_content"
                     app:typeface="fonts/Gotham-Book.ttf" />
 
             </LinearLayout>

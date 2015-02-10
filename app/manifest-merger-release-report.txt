@@ -13,8 +13,12 @@ ADDED from AndroidManifest.xml:2:1
 	android:versionCode
 		INJECTED from AndroidManifest.xml:0:0
 		INJECTED from AndroidManifest.xml:0:0
-application
+uses-permission#android.permission.CALL_PHONE
 ADDED from AndroidManifest.xml:5:5
+	android:name
+		ADDED from AndroidManifest.xml:5:22
+application
+ADDED from AndroidManifest.xml:7:5
 MERGED from com.android.support:appcompat-v7:21.0.3:16:5
 MERGED from com.android.support:support-v4:21.0.3:16:5
 MERGED from com.android.support:appcompat-v7:21.0.3:16:5
@@ -22,107 +26,107 @@ MERGED from com.android.support:support-v4:21.0.3:16:5
 MERGED from com.android.support:recyclerview-v7:21.0.3:17:5
 MERGED from com.android.support:support-v4:21.0.3:16:5
 	android:label
-		ADDED from AndroidManifest.xml:8:9
+		ADDED from AndroidManifest.xml:10:9
 	android:allowBackup
-		ADDED from AndroidManifest.xml:6:9
+		ADDED from AndroidManifest.xml:8:9
 	android:icon
-		ADDED from AndroidManifest.xml:7:9
-	android:theme
 		ADDED from AndroidManifest.xml:9:9
+	android:theme
+		ADDED from AndroidManifest.xml:11:9
 activity#com.yogesh.wordzapp.MainActivity
-ADDED from AndroidManifest.xml:10:9
+ADDED from AndroidManifest.xml:12:9
 	android:label
-		ADDED from AndroidManifest.xml:12:13
+		ADDED from AndroidManifest.xml:14:13
 	android:name
-		ADDED from AndroidManifest.xml:11:13
+		ADDED from AndroidManifest.xml:13:13
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from AndroidManifest.xml:13:13
+ADDED from AndroidManifest.xml:15:13
 action#android.intent.action.MAIN
-ADDED from AndroidManifest.xml:14:17
-	android:name
-		ADDED from AndroidManifest.xml:14:25
-category#android.intent.category.LAUNCHER
 ADDED from AndroidManifest.xml:16:17
 	android:name
-		ADDED from AndroidManifest.xml:16:27
+		ADDED from AndroidManifest.xml:16:25
+category#android.intent.category.LAUNCHER
+ADDED from AndroidManifest.xml:18:17
+	android:name
+		ADDED from AndroidManifest.xml:18:27
 activity#com.yogesh.wordzapp.WordzBasic
-ADDED from AndroidManifest.xml:19:9
+ADDED from AndroidManifest.xml:21:9
 	android:label
-		ADDED from AndroidManifest.xml:21:13
+		ADDED from AndroidManifest.xml:23:13
 	android:parentActivityName
+		ADDED from AndroidManifest.xml:24:13
+	android:name
 		ADDED from AndroidManifest.xml:22:13
-	android:name
-		ADDED from AndroidManifest.xml:20:13
 meta-data#android.support.PARENT_ACTIVITY
-ADDED from AndroidManifest.xml:23:13
+ADDED from AndroidManifest.xml:25:13
 	android:name
-		ADDED from AndroidManifest.xml:24:17
+		ADDED from AndroidManifest.xml:26:17
 	android:value
-		ADDED from AndroidManifest.xml:25:17
+		ADDED from AndroidManifest.xml:27:17
 activity#com.yogesh.wordzapp.WordzSchedule
-ADDED from AndroidManifest.xml:27:9
+ADDED from AndroidManifest.xml:29:9
 	android:label
-		ADDED from AndroidManifest.xml:29:13
+		ADDED from AndroidManifest.xml:31:13
 	android:parentActivityName
+		ADDED from AndroidManifest.xml:32:13
+	android:name
 		ADDED from AndroidManifest.xml:30:13
-	android:name
-		ADDED from AndroidManifest.xml:28:13
 activity#com.yogesh.wordzapp.WordzSupport
-ADDED from AndroidManifest.xml:35:9
+ADDED from AndroidManifest.xml:37:9
 	android:label
-		ADDED from AndroidManifest.xml:37:13
+		ADDED from AndroidManifest.xml:39:13
 	android:parentActivityName
+		ADDED from AndroidManifest.xml:40:13
+	android:name
 		ADDED from AndroidManifest.xml:38:13
-	android:name
-		ADDED from AndroidManifest.xml:36:13
 activity#com.yogesh.wordzapp.MODEL_UN_PRO
-ADDED from AndroidManifest.xml:43:9
+ADDED from AndroidManifest.xml:45:9
 	android:label
-		ADDED from AndroidManifest.xml:45:13
+		ADDED from AndroidManifest.xml:47:13
 	android:parentActivityName
+		ADDED from AndroidManifest.xml:48:13
+	android:name
 		ADDED from AndroidManifest.xml:46:13
-	android:name
-		ADDED from AndroidManifest.xml:44:13
 activity#com.yogesh.wordzapp.MUNVocab
-ADDED from AndroidManifest.xml:51:9
+ADDED from AndroidManifest.xml:53:9
 	android:label
-		ADDED from AndroidManifest.xml:53:13
+		ADDED from AndroidManifest.xml:55:13
 	android:parentActivityName
+		ADDED from AndroidManifest.xml:56:13
+	android:name
 		ADDED from AndroidManifest.xml:54:13
-	android:name
-		ADDED from AndroidManifest.xml:52:13
 activity#com.yogesh.wordzapp.PointsAndMotionList
-ADDED from AndroidManifest.xml:59:9
+ADDED from AndroidManifest.xml:61:9
 	android:label
-		ADDED from AndroidManifest.xml:61:13
+		ADDED from AndroidManifest.xml:63:13
 	android:parentActivityName
+		ADDED from AndroidManifest.xml:64:13
+	android:name
 		ADDED from AndroidManifest.xml:62:13
-	android:name
-		ADDED from AndroidManifest.xml:60:13
 activity#com.yogesh.wordzapp.Resolutions
-ADDED from AndroidManifest.xml:67:9
+ADDED from AndroidManifest.xml:69:9
 	android:label
-		ADDED from AndroidManifest.xml:69:13
+		ADDED from AndroidManifest.xml:71:13
 	android:parentActivityName
+		ADDED from AndroidManifest.xml:72:13
+	android:name
 		ADDED from AndroidManifest.xml:70:13
-	android:name
-		ADDED from AndroidManifest.xml:68:13
 activity#com.yogesh.wordzapp.SampleResolution
-ADDED from AndroidManifest.xml:75:9
+ADDED from AndroidManifest.xml:77:9
 	android:label
-		ADDED from AndroidManifest.xml:77:13
+		ADDED from AndroidManifest.xml:79:13
 	android:parentActivityName
+		ADDED from AndroidManifest.xml:80:13
+	android:name
 		ADDED from AndroidManifest.xml:78:13
-	android:name
-		ADDED from AndroidManifest.xml:76:13
 activity#com.yogesh.wordzapp.PointsAndMotionUsage
-ADDED from AndroidManifest.xml:83:9
+ADDED from AndroidManifest.xml:85:9
 	android:label
-		ADDED from AndroidManifest.xml:85:13
+		ADDED from AndroidManifest.xml:87:13
 	android:parentActivityName
-		ADDED from AndroidManifest.xml:86:13
+		ADDED from AndroidManifest.xml:88:13
 	android:name
-		ADDED from AndroidManifest.xml:84:13
+		ADDED from AndroidManifest.xml:86:13
 uses-sdk
 INJECTED from AndroidManifest.xml:0:0 reason: use-sdk injection requested
 MERGED from com.android.support:appcompat-v7:21.0.3:15:5
