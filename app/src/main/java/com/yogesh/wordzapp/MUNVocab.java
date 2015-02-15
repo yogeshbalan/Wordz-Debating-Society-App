@@ -17,7 +17,7 @@ public class MUNVocab extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_munvocab);
 
-        mTitle = "MODEL Vocab";
+        mTitle = "Model UN Vocabulary";
 
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         toolbar.setTitle(mTitle);

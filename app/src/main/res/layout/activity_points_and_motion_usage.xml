@@ -25,12 +25,13 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/toolbar">
+        android:layout_below="@+id/toolbar"
+        android:foregroundGravity="center">
+
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/toolbar"
+            android:layout_height="match_parent"
             android:orientation="vertical">
 
             <HorizontalScrollView
@@ -38,6 +39,11 @@
                 android:layout_height="match_parent"
                 android:scrollbarAlwaysDrawHorizontalTrack="true"
                 android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -70,13 +76,6 @@
                         app:typeface="fonts/Gotham-Book.ttf" />
 
                 </LinearLayout>
-            </HorizontalScrollView>
-
-            <HorizontalScrollView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:scrollbarAlwaysDrawHorizontalTrack="true"
-                android:scrollbars="none">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -109,13 +108,6 @@
                         app:typeface="fonts/Gotham-Book.ttf" />
 
                 </LinearLayout>
-            </HorizontalScrollView>
-
-            <HorizontalScrollView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:scrollbarAlwaysDrawHorizontalTrack="true"
-                android:scrollbars="none">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -149,13 +141,6 @@
                         app:typeface="fonts/Gotham-Book.ttf" />
 
                 </LinearLayout>
-            </HorizontalScrollView>
-
-            <HorizontalScrollView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:scrollbarAlwaysDrawHorizontalTrack="true"
-                android:scrollbars="none">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -191,13 +176,6 @@ Honourable Chair, (Country Name) is open to questions"
                         app:typeface="fonts/Gotham-Book.ttf" />
 
                 </LinearLayout>
-            </HorizontalScrollView>
-
-            <HorizontalScrollView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:scrollbarAlwaysDrawHorizontalTrack="true"
-                android:scrollbars="none">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -230,14 +208,6 @@ Honourable Chair, (Country Name) is open to questions"
                         app:typeface="fonts/Gotham-Book.ttf" />
 
                 </LinearLayout>
-            </HorizontalScrollView>
-
-
-            <HorizontalScrollView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:scrollbarAlwaysDrawHorizontalTrack="true"
-                android:scrollbars="none">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -272,13 +242,6 @@ Honourable Chair, (Country Name) moves to suspend the meeting for an un-moderate
                         app:typeface="fonts/Gotham-Book.ttf" />
 
                 </LinearLayout>
-            </HorizontalScrollView>
-
-            <HorizontalScrollView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:scrollbarAlwaysDrawHorizontalTrack="true"
-                android:scrollbars="none">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -311,13 +274,6 @@ Honourable Chair, (Country Name) moves to suspend the meeting for an un-moderate
                         app:typeface="fonts/Gotham-Book.ttf" />
 
                 </LinearLayout>
-            </HorizontalScrollView>
-
-            <HorizontalScrollView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:scrollbarAlwaysDrawHorizontalTrack="true"
-                android:scrollbars="none">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -350,14 +306,7 @@ Honourable Chair, (Country Name) moves to suspend the meeting for an un-moderate
                         app:typeface="fonts/Gotham-Book.ttf" />
 
                 </LinearLayout>
-            </HorizontalScrollView>
-
-            <HorizontalScrollView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:scrollbarAlwaysDrawHorizontalTrack="true"
-                android:scrollbars="none">
-
+                
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -389,13 +338,6 @@ Honourable Chair, (Country Name) moves to suspend the meeting for an un-moderate
                         app:typeface="fonts/Gotham-Book.ttf" />
 
                 </LinearLayout>
-            </HorizontalScrollView>
-
-            <HorizontalScrollView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:scrollbarAlwaysDrawHorizontalTrack="true"
-                android:scrollbars="none">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -428,7 +370,6 @@ Honourable Chair, (Country Name) moves to suspend the meeting for an un-moderate
                         app:typeface="fonts/Gotham-Book.ttf" />
 
                 </LinearLayout>
-            </HorizontalScrollView>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -450,7 +391,10 @@ THE 2006 UNA-USAMODEL UNITED NATIONS CONFERENCE ADVISORS GUIDE"
 
 
             </LinearLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
         </LinearLayout>
+
     </ScrollView>
 
 

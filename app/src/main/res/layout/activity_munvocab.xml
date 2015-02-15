@@ -55,7 +55,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="Placard 1. \nA sign that identifies your country. "
+                    android:text="1. Placard  \nA sign that identifies your country. "
                     android:textColor="@color/greytextdetail"
                     android:textSize="@dimen/text_content"
                     app:typeface="fonts/Gotham-Book.ttf" />
@@ -64,7 +64,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="Sponsors 2. \nCountries that are the principal authors of Model UN resolutions. "
+                    android:text="2. Sponsors  \nCountries that are the principal authors of Model UN resolutions. "
                     android:textColor="@color/greytextdetail"
                     android:textSize="@dimen/text_content"
                     app:typeface="fonts/Gotham-Book.ttf" />
@@ -73,7 +73,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="Secretariat 3. \nPerson who facilitates Model UN Debate. "
+                    android:text="3. Secretariat  \nPerson who facilitates Model UN Debate. "
                     android:textColor="@color/greytextdetail"
                     android:textSize="@dimen/text_content"
                     app:typeface="fonts/Gotham-Book.ttf" />
@@ -82,7 +82,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="Roll call 4. \nAttendance at the beginning of every Model UN session. "
+                    android:text="4. Roll call  \nAttendance at the beginning of every Model UN session. "
                     android:textColor="@color/greytextdetail"
                     android:textSize="@dimen/text_content"
                     app:typeface="fonts/Gotham-Book.ttf" />
@@ -91,7 +91,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="Veto 5. \nThe vested power of the “P5” (permanent 5) countries to refuse approval of a draft resolution. "
+                    android:text="5. Veto  \nThe vested power of the “P5” (permanent 5) countries to refuse approval of a draft resolution. "
                     android:textColor="@color/greytextdetail"
                     android:textSize="@dimen/text_content"
                     app:typeface="fonts/Gotham-Book.ttf" />
@@ -100,7 +100,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="Signatories 6. \nCountries that would like to see a certain draft resolution debated. "
+                    android:text="6. Signatories  \nCountries that would like to see a certain draft resolution debated. "
                     android:textColor="@color/greytextdetail"
                     android:textSize="@dimen/text_content"
                     app:typeface="fonts/Gotham-Book.ttf" />
@@ -109,7 +109,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="Present and voting 7. \nWhen a delegate is present and wishes to vote. "
+                    android:text="7. Present and voting  \nWhen a delegate is present and wishes to vote. "
                     android:textColor="@color/greytextdetail"
                     android:textSize="@dimen/text_content"
                     app:typeface="fonts/Gotham-Book.ttf" />
@@ -118,7 +118,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="Unmoderated caucus 8. \nInformal meeting in which delegates discuss country positions and ideas for draft resolutions. "
+                    android:text="8. Unmoderated caucus  \nInformal meeting in which delegates discuss country positions and ideas for draft resolutions. "
                     android:textColor="@color/greytextdetail"
                     android:textSize="@dimen/text_content"
                     app:typeface="fonts/Gotham-Book.ttf" />
@@ -127,7 +127,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="Yield 9. \nTo give up time, usually to questions or another delegate. "
+                    android:text="9. Yield  \nTo give up time, usually to questions or another delegate. "
                     android:textColor="@color/greytextdetail"
                     android:textSize="@dimen/text_content"
                     app:typeface="fonts/Gotham-Book.ttf" />
@@ -136,7 +136,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="Bloc 10. \nA group of nations. "
+                    android:text="10. Bloc  \nA group of nations. "
                     android:textColor="@color/greytextdetail"
                     android:textSize="@dimen/text_content"
                     app:typeface="fonts/Gotham-Book.ttf" />
@@ -145,7 +145,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="Delegate 11. \nA person authorized to act as representative for a country. "
+                    android:text="11. Delegate  \nA person authorized to act as representative for a country. "
                     android:textColor="@color/greytextdetail"
                     android:textSize="@dimen/text_content"
                     app:typeface="fonts/Gotham-Book.ttf" />
@@ -155,7 +155,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="Quorum 12. \nThe number of members that must be present before official business can be conducted. "
+                    android:text="12. Quorum  \nThe number of members that must be present before official business can be conducted. "
                     android:textColor="@color/greytextdetail"
                     android:textSize="@dimen/text_content"
                     app:typeface="fonts/Gotham-Book.ttf" />
@@ -164,7 +164,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="Position paper 13. \nA paper that helps delegates to organize their ideas and aid in formatting and representing a country’s policy. "
+                    android:text="13. Position paper  \nA paper that helps delegates to organize their ideas and aid in formatting and representing a country’s policy. "
                     android:textColor="@color/greytextdetail"
                     android:textSize="@dimen/text_content"
                     app:typeface="fonts/Gotham-Book.ttf" />
@@ -173,7 +173,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="Resolution 14. \nThe final results of discussion, writing and negotiation, including suggestions for addressing a specific problem or issue. "
+                    android:text="14. Resolution  \nThe final results of discussion, writing and negotiation, including suggestions for addressing a specific problem or issue. "
                     android:textColor="@color/greytextdetail"
                     android:textSize="@dimen/text_content"
                     app:typeface="fonts/Gotham-Book.ttf" />
@@ -182,7 +182,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="United Nations 15. \nAn international organization of nations pledged together to promote world peace and security. "
+                    android:text="15. United Nations  \nAn international organization of nations pledged together to promote world peace and security. "
                     android:textColor="@color/greytextdetail"
                     android:textSize="@dimen/text_content"
                     app:typeface="fonts/Gotham-Book.ttf" />
@@ -191,7 +191,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="Secretariat 16. \nThe most senior staff of a Model UN conference. "
+                    android:text="16. Secretariat  \nThe most senior staff of a Model UN conference. "
                     android:textColor="@color/greytextdetail"
                     android:textSize="@dimen/text_content"
                     app:typeface="fonts/Gotham-Book.ttf" />
@@ -200,7 +200,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="Speakers List 17. \nA list that determines the order in which delegates will speak. "
+                    android:text="17. Speakers List  \nA list that determines the order in which delegates will speak. "
                     android:textColor="@color/greytextdetail"
                     android:textSize="@dimen/text_content"
                     app:typeface="fonts/Gotham-Book.ttf" />
@@ -209,7 +209,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="Debate 18. \nTo discuss opposing reasons or to argue. "
+                    android:text="18. Debate  \nTo discuss opposing reasons or to argue. "
                     android:textColor="@color/greytextdetail"
                     android:textSize="@dimen/text_content"
                     app:typeface="fonts/Gotham-Book.ttf" />
@@ -218,7 +218,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="Dias 19. \nThe group of people, usually high school or college students, in charge of a Model UN committee. It generally consists of a Chair, a Director and a Rapporteur."
+                    android:text="19. Dias  \nThe group of people, usually high school or college students, in charge of a Model UN committee. It generally consists of a Chair, a Director and a Rapporteur."
                     android:textColor="@color/greytextdetail"
                     android:textSize="@dimen/text_content"
                     app:typeface="fonts/Gotham-Book.ttf" />
@@ -227,7 +227,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="Gavel 20. \nThe tool shaped like a small wooden hammer that the Chair uses to keep order."
+                    android:text="20. Gavel  \nThe tool shaped like a small wooden hammer that the Chair uses to keep order."
                     android:textColor="@color/greytextdetail"
                     android:textSize="@dimen/text_content"
                     app:typeface="fonts/Gotham-Book.ttf" />
