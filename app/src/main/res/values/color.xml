@@ -14,12 +14,12 @@
     <color name="colorPrimary">#1565C0</color>
     <color name="colorPrimaryDark">#2D5D7B</color>
     
-    <color name="firstFrame">#DAC4F7</color>
-    <color name="secondFrame">#EBD2B4</color>
-    <color name="thirdFrame">#F4989C</color>
+    <color name="firstFrame">#DEE2D6</color>
+    <color name="secondFrame">#CACFD6</color>
+    <color name="thirdFrame">#FCB07E</color>
     
     <!-- procedure colors -->
-    <color name="pro_one">#F4EBBE</color>
+    <color name="pro_one">#53917E</color>
     <color name="pro_two">#CACC90</color>
     <color name="pro_three">#75704E</color>
     <color name="pro_four">#F4989C</color>

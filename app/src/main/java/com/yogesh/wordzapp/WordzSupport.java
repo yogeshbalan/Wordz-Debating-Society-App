@@ -37,9 +37,13 @@ public class WordzSupport extends ActionBarActivity {
     }
 
     public void makeAPhoneCall(final View view){
-        Intent callIntent = new Intent(Intent.ACTION_CALL);
-        callIntent.setData(Uri.parse("tel:+919818548532"));
-        startActivity(callIntent);
+        //Intent callIntent = new Intent(Intent.ACTION_CALL);
+        //callIntent.setData(Uri.parse("tel:+919818548532"));
+        //startActivity(callIntent);
+        Intent emailIntent = new Intent(Intent.ACTION_SENDTO, Uri.fromParts(
+                "mailto", "wordz.delhi@gmail.com", null));
+        emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Feedback");
+        startActivity(Intent.createChooser(emailIntent, "Send email..."));
     }
 
 

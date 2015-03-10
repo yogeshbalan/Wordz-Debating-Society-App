@@ -102,6 +102,7 @@ public class MainActivity extends ActionBarActivity implements NotifyScrollView.
                     .content(Html.fromHtml(getString(R.string.about_body)))
                             //.positiveText("Agree")
                             //.negativeText("Disagree")
+
                     .icon(d)
                     .show();
             return true;

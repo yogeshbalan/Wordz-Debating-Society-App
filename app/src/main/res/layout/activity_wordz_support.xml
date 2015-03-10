@@ -67,7 +67,7 @@
                         android:layout_gravity="bottom|left"
                         android:layout_marginLeft="4dp"
                         android:padding="6dp"
-                        android:text="• Director-Sakshi Aggarwal"
+                        android:text="• Mail us at-"
                         android:textColor="@color/trans_grey"
                         android:textSize="14sp"
                         app:typeface="fonts/Gotham-MediumItalic.ttf" />
@@ -78,7 +78,7 @@
                         android:layout_gravity="bottom|left"
                         android:layout_marginLeft="4dp"
                         android:padding="6dp"
-                        android:text="  +919818548532"
+                        android:text="  wordz.delhi@gmail.com"
                         android:textColor="@color/trans_grey"
                         android:textSize="14sp"
                         app:typeface="fonts/Gotham-Medium.ttf" />

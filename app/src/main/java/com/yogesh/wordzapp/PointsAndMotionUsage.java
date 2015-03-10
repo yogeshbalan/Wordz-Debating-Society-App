@@ -1,10 +1,13 @@
 package com.yogesh.wordzapp;
 
+import android.os.Build;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import com.nispok.snackbar.Snackbar;
 
 
 public class PointsAndMotionUsage extends ActionBarActivity {
@@ -17,6 +20,10 @@ public class PointsAndMotionUsage extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_points_and_motion_usage);
 
+        Snackbar.with(getApplicationContext()) // context
+                .text("Scroll horizontally :) ") // text to display
+                .show(this); // activity where it is displayed
+
         mTitle = "Points and Motion - Usage";
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         toolbar.setTitle(mTitle);
@@ -24,7 +31,10 @@ public class PointsAndMotionUsage extends ActionBarActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeButtonEnabled(true);
-        
+        if (Build.VERSION.SDK_INT == Build.VERSION_CODES.LOLLIPOP) {
+            getWindow().setNavigationBarColor(getResources().getColor(R.color.pro_four));
+            getWindow().setStatusBarColor(getResources().getColor(R.color.pro_four));
+        }
     }
 
 

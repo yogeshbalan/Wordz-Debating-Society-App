@@ -2,10 +2,9 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 21
-    buildToolsVersion "21.1.2"
-
+    buildToolsVersion '21.1.0'
     defaultConfig {
-        applicationId "com.yogesh.wordzapp"
+        applicationId 'in.co.wordzdelhi'
         minSdkVersion 14
         targetSdkVersion 21
         versionCode 100
@@ -17,10 +16,13 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    productFlavors {
+    }
 }
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:appcompat-v7:21.0.3'
     compile 'com.afollestad:material-dialogs:0.5.5'
+    compile 'com.nispok:snackbar:2.9.0'
 }

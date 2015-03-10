@@ -7,6 +7,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.nispok.snackbar.Snackbar;
+
 
 public class WordzSchedule extends ActionBarActivity {
 
@@ -17,6 +19,10 @@ public class WordzSchedule extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_wordz_schedule);
+
+        Snackbar.with(getApplicationContext()) // context
+                .text("Scroll horizontally :) ") // text to display
+                .show(this); // activity where it is displayed
 
         mTitle = "MUN Schedule";
 

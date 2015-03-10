@@ -3,7 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_centerHorizontal="true"
     tools:context="com.yogesh.wordzapp.PointsAndMotionList">
 
     <android.support.v7.widget.Toolbar xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -11,17 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/pro_three"
-        app:theme="@style/myCustomTheme">
-
-        <TextView
-            android:id="@+id/toolbar_title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text=""
-            android:textSize="20sp" />
-    </android.support.v7.widget.Toolbar>
-
+        app:theme="@style/myCustomTheme"/>
 
     <ScrollView
         android:layout_width="match_parent"
@@ -44,13 +33,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/toolbar"
+                    android:background="@drawable/abc_popup_background_mtrl_mult"
                     android:orientation="vertical">
+
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="5dp"
-                        android:background="@drawable/abc_popup_background_mtrl_mult"
                         android:orientation="horizontal">
 
 
@@ -89,16 +79,14 @@
 
                     </LinearLayout>
 
-
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="3dp"
-                        android:layout_marginRight="3dp"
-                        android:background="@drawable/abc_popup_background_mtrl_mult"
+                        android:layout_margin="5dp"
                         android:orientation="horizontal">
 
-                        <com.yogesh.wordzapp.utils.TextView
+
+                    <com.yogesh.wordzapp.utils.TextView
                             android:layout_width="@dimen/table_width"
                             android:layout_height="wrap_content"
                             android:layout_margin="6dp"
@@ -136,12 +124,11 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="3dp"
-                        android:layout_marginRight="3dp"
-                        android:background="@drawable/abc_popup_background_mtrl_mult"
+                        android:layout_margin="5dp"
                         android:orientation="horizontal">
 
-                        <com.yogesh.wordzapp.utils.TextView
+
+                    <com.yogesh.wordzapp.utils.TextView
                             android:layout_width="@dimen/table_width"
                             android:layout_height="wrap_content"
                             android:layout_margin="6dp"
@@ -179,12 +166,11 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="3dp"
-                        android:layout_marginRight="3dp"
-                        android:background="@drawable/abc_popup_background_mtrl_mult"
+                        android:layout_margin="5dp"
                         android:orientation="horizontal">
 
-                        <com.yogesh.wordzapp.utils.TextView
+
+                    <com.yogesh.wordzapp.utils.TextView
                             android:layout_width="@dimen/table_width"
                             android:layout_height="wrap_content"
                             android:layout_margin="6dp"
@@ -222,12 +208,11 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="3dp"
-                        android:layout_marginRight="3dp"
-                        android:background="@drawable/abc_popup_background_mtrl_mult"
+                        android:layout_margin="5dp"
                         android:orientation="horizontal">
 
-                        <com.yogesh.wordzapp.utils.TextView
+
+                    <com.yogesh.wordzapp.utils.TextView
                             android:layout_width="@dimen/table_width"
                             android:layout_height="wrap_content"
                             android:layout_margin="6dp"
@@ -265,12 +250,11 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="3dp"
-                        android:layout_marginRight="3dp"
-                        android:background="@drawable/abc_popup_background_mtrl_mult"
+                        android:layout_margin="5dp"
                         android:orientation="horizontal">
 
-                        <com.yogesh.wordzapp.utils.TextView
+
+                    <com.yogesh.wordzapp.utils.TextView
                             android:layout_width="@dimen/table_width"
                             android:layout_height="wrap_content"
                             android:layout_margin="6dp"
@@ -308,12 +292,11 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="3dp"
-                        android:layout_marginRight="3dp"
-                        android:background="@drawable/abc_popup_background_mtrl_mult"
+                        android:layout_margin="5dp"
                         android:orientation="horizontal">
 
-                        <com.yogesh.wordzapp.utils.TextView
+
+                    <com.yogesh.wordzapp.utils.TextView
                             android:layout_width="@dimen/table_width"
                             android:layout_height="wrap_content"
                             android:layout_margin="6dp"
@@ -351,12 +334,11 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="3dp"
-                        android:layout_marginRight="3dp"
-                        android:background="@drawable/abc_popup_background_mtrl_mult"
+                        android:layout_margin="5dp"
                         android:orientation="horizontal">
 
-                        <com.yogesh.wordzapp.utils.TextView
+
+                    <com.yogesh.wordzapp.utils.TextView
                             android:layout_width="@dimen/table_width"
                             android:layout_height="wrap_content"
                             android:layout_margin="6dp"
@@ -394,12 +376,11 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="3dp"
-                        android:layout_marginRight="3dp"
-                        android:background="@drawable/abc_popup_background_mtrl_mult"
+                        android:layout_margin="5dp"
                         android:orientation="horizontal">
 
-                        <com.yogesh.wordzapp.utils.TextView
+
+                    <com.yogesh.wordzapp.utils.TextView
                             android:layout_width="@dimen/table_width"
                             android:layout_height="wrap_content"
                             android:layout_margin="6dp"
@@ -437,12 +418,11 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="3dp"
-                        android:layout_marginRight="3dp"
-                        android:background="@drawable/abc_popup_background_mtrl_mult"
+                        android:layout_margin="5dp"
                         android:orientation="horizontal">
 
-                        <com.yogesh.wordzapp.utils.TextView
+
+                    <com.yogesh.wordzapp.utils.TextView
                             android:layout_width="@dimen/table_width"
                             android:layout_height="wrap_content"
                             android:layout_margin="6dp"
@@ -479,6 +459,13 @@
                     </LinearLayout>
 
 
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal">
+
                     <com.yogesh.wordzapp.utils.TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -488,6 +475,7 @@ THE 2006 UNA-USAMODEL UNITED NATIONS CONFERENCE ADVISORS GUIDE"
                         android:textColor="@color/greytextdetail"
                         android:textSize="10sp"
                         app:typeface="fonts/Gotham-Book.ttf" />
+                </LinearLayout>
                 </LinearLayout>
 
             </HorizontalScrollView>
